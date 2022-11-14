@@ -1,0 +1,105 @@
+:root {
+    --verde-appso: rgb(114, 219, 101);
+}
+
+* {
+    padding: 0;
+    margin: 0 auto;
+    font-family: 'Istok Web', sans-serif;
+}
+
+
+/* Página Inicial */
+.apresentacao {
+    display: grid;
+    place-items: center;
+    background-image: url(../imagens/tree.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.titulo {
+    display: grid;
+    place-items: center;
+
+}
+
+.titulo h1 {
+    color: white;
+    font-size: 5vh;
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/istokweb/v20/3qTqojGmgSyUukBzKslhvU5q9GMVUBc.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+.botao-descubra {
+    text-decoration: none;
+    color: white;
+    border-style: solid;
+    border-color: var(--verde-appso);
+    background-color: var(--verde-appso);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.botao-contato {
+    text-decoration: none;
+    color: white;
+    border-style: solid;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.sobre-plataforma {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url(../imagens/paper-green-white.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.sobre-plataforma-p {
+    display: grid;
+    place-content: center;
+    padding: 0 0 0 50px;
+    color: white;
+    font-size: 3vh;
+}
+
+.sobre-plataforma-p p {
+    padding: 0 0 30px 0;
+}
+
+
+.sobre-plataforma-img img {
+    display: grid;
+    justify-self: end;
+    height: 85vh;
+}
+
+/* Serviços Digitais */
+.servicos {
+    padding: 100px 0;
+    background-image: url(../imagens/paper.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: rgb(25, 121, 46);
+}
+
+.servicos-lista {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.servicos-lista div {
+    display: grid;
+    place-items: center;
+}
+
+.servicos-lista div img {
+    height: 30vh;
+}
