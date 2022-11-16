@@ -52,7 +52,7 @@
     padding: 5px;
     border-radius: 10px;
 }
-
+/* Sobre */
 .sobre-plataforma {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -80,6 +80,37 @@
     height: 85vh;
 }
 
+@media only screen and (max-width: 950px) {
+    .sobre-plataforma {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre-plataforma-p {
+        padding: 0 20px;
+    }
+    
+    
+    .sobre-plataforma-p {
+        font-size: 2vh;
+    }
+
+    .sobre-plataforma-p p {
+        padding: 0 20px;
+    }
+    
+
+    .sobre-plataforma-img {
+        display: grid;
+        place-items: center;
+    }
+
+
+    .sobre-plataforma-img img {
+        height: 55vh;
+    }
+
+}
+
 /* Serviços Digitais */
 .servicos {
     padding: 100px 0;
@@ -102,4 +133,23 @@
 
 .servicos-lista div img {
     height: 30vh;
+}
+
+@media screen and (max-width: 500px){
+    .servicos-lista {
+        grid-template-columns: repeat(2, 1fr);
+    } 
+    .servicos-lista div img{
+        height: 15vh;   
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+    .servicos-lista {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .servicos {
+        background-repeat: repeat;
+    }
 }
