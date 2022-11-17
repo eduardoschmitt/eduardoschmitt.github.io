@@ -125,6 +125,10 @@ body{
     padding: 0 0 30px 0;
 }
 
+.sobre-plataforma-p div{
+    padding: 0 0 25px 0;
+}
+
 
 .sobre-plataforma-img img {
     display: grid;
@@ -148,6 +152,10 @@ body{
     }
 
     .sobre-plataforma-p p {
+        padding: 0 20px;
+    }
+
+    .sobre-plataforma-p div {
         padding: 0 20px;
     }
     
@@ -184,11 +192,19 @@ body{
         font-size: 15px;
     }
 
+    .sobre-plataforma-p div{
+        font-size: 15px;
+    }
+
 }
 
 @media only screen and (max-width: 200px) {
 
     .sobre-plataforma-p p{
+        font-size: 8px;
+    }
+
+    .sobre-plataforma-p div{
         font-size: 8px;
     }
 
