@@ -78,7 +78,31 @@ body{
     .botao-descubra{
         margin: 100px 0;
     }
+
+    .titulo h1 { 
+        font-size: 2vh;
+    }   
 }
+
+@media only screen and (max-width: 210px) {
+    .titulo h1 { 
+        font-size: 12px;
+    }
+
+    .botoes{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+    .botao-contato{
+        margin: 10px;
+    } 
+
+    .botao-descubra{
+        margin: 10px;
+    }
+}
+
 
 /* Sobre */
 .sobre-plataforma {
@@ -252,10 +276,6 @@ body{
     .servicos-lista {
         grid-template-columns: 1fr;
     }
-    
-    .servicos {
-        background-repeat: repeat;
-    }
 }
 
 @media screen and (min-width: 0px) and (max-width: 300px){
@@ -268,6 +288,99 @@ body{
     }
 
 
+}
+
+/* Parceiros */
+.parceiros-lista{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.parceiros-lista div{
+    display: grid;
+    place-items: center;
+    padding: 0 0 100px 0;
+}
+
+.parceiros-lista div img {
+    height: 25vh;
+}
+
+.parceiros-lista div p{
+    color: rgb(25, 121, 46);
+    text-align: center;
+}
+
+@media screen and (max-width: 1150px){
+
+    .parceiros-lista {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .parceiros-lista div{
+        padding: 30px;
+    } 
+    .parceiros-lista div img{
+        height: 15vh;   
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+    
+    .parceiros-lista div{
+        padding: 0 0 120px 0;
+    }
+
+    .parceiros-lista {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media screen and (min-width: 0px) and (max-width: 300px){
+    .parceiros-lista div img {
+        height: 10vh;
+    }
+
+    .parceiros-lista div p {
+        font-size: 10px;
+    }
+}
+
+/* Contato */
+.contato-divisao{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contato-divisao p{
+    padding: 0 0 10px 0;
+}
+
+.contato-divisao img{
+    height: 15vh;
+    padding: 0 0 50px 0;
+}
+
+@media screen and (min-width: 0px) and (max-width: 600px){
+    .contato-divisao{
+        grid-template-columns: 1fr;
+    }
+
+    .contato-divisao p{
+        text-align: center;
+    }
+
+    .contato-divisao img{
+        height: 5vh;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 300px){
+    .contato-divisao p{
+        font-size: 10px;
+    }
 }
 
 /* Rodapé */
