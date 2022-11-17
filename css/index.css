@@ -1,3 +1,4 @@
+/* Configurações Iniciais */
 :root {
     --verde-appso: rgb(114, 219, 101);
 }
@@ -8,7 +9,6 @@
     font-family: 'Istok Web', sans-serif;
 }
 
-/* Teste */
 body{
     background-color: rgb(255, 255, 255);
 }
@@ -25,10 +25,9 @@ body{
 .titulo {
     display: grid;
     place-items: center;
-
 }
 
-.titulo h1 {
+.titulo h1 { 
     color: white;
     font-size: 5vh;
     font-family: 'Istok Web';
@@ -39,13 +38,18 @@ body{
     unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
+.botoes{
+    padding: 10px 0;
+}
+
 .botao-descubra {
     text-decoration: none;
     color: white;
     border-style: solid;
     border-color: var(--verde-appso);
     background-color: var(--verde-appso);
-    padding: 5px;
+    margin: 5px;
+    padding: 5px 15px;
     border-radius: 10px;
 }
 
@@ -53,14 +57,20 @@ body{
     text-decoration: none;
     color: white;
     border-style: solid;
-    padding: 5px;
+    margin: 5px;
+    padding: 5px 15px;
     border-radius: 10px;
 }
+
+
+
 /* Sobre */
 .sobre-plataforma {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-image: url(../imagens/paper-green-white.jpg);
+    background-size: cover;
+    height: 100vh;
 }
 
 .sobre-plataforma-p {
@@ -134,11 +144,10 @@ body{
 
 .servicos {
     padding: 100px 0;
-    /*background-image: url(../imagens/paper.jpg);*/
     background-color: white;
     background-size: cover;
-    height: 100vh;
-    width: 100vw;
+    height: 90vh;
+    width: 90vw;
     color: rgb(25, 121, 46);
 }
 
@@ -155,12 +164,12 @@ body{
 }
 
 .servicos-lista div img {
-    height: 30vh;
+    height: 25vh;
 }
 
 @media screen and (max-width: 1150px){
     .servicos {
-        padding: 200px 0;
+        padding: 75px 0 0 0;
     }
 
     .servicos-lista {
@@ -175,11 +184,11 @@ body{
 
 @media screen and (min-width: 0px) and (max-width: 500px) {
     .servicos {
-        padding: 750px 0 600px 0;
+        padding: 50px 0 700px 0;
     }
     
     .servicos-lista {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
     }
     
     .servicos {
@@ -187,6 +196,10 @@ body{
     }
 }
 
+/* Rodapé */
 footer {
-    background-color: var(--verde-appso);
+    background-color: rgb(25, 121, 46);
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
