@@ -8,6 +8,10 @@
     font-family: 'Istok Web', sans-serif;
 }
 
+/* Teste */
+body{
+    background-color: rgb(255, 255, 255);
+}
 
 /* Página Inicial */
 .apresentacao {
@@ -57,8 +61,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-image: url(../imagens/paper-green-white.jpg);
-    background-size: cover;
-    height: 100vh;
 }
 
 .sobre-plataforma-p {
@@ -91,7 +93,8 @@
     
     
     .sobre-plataforma-p {
-        font-size: 2vh;
+        padding: 30px 0 0 0;
+        font-size: 15px;
     }
 
     .sobre-plataforma-p p {
@@ -115,6 +118,10 @@
     .sobre-plataforma-p {
         font-size: 17px;
     }
+
+    .sobre-plataforma-img img {
+        height: 35vh;
+    }
 }
 
 /* Serviços Digitais */
@@ -127,9 +134,11 @@
 
 .servicos {
     padding: 100px 0;
-    background-image: url(../imagens/paper.jpg);
+    /*background-image: url(../imagens/paper.jpg);*/
+    background-color: white;
     background-size: cover;
     height: 100vh;
+    width: 100vw;
     color: rgb(25, 121, 46);
 }
 
@@ -149,16 +158,26 @@
     height: 30vh;
 }
 
-@media screen and (max-width: 1050px){
+@media screen and (max-width: 1150px){
+    .servicos {
+        padding: 200px 0;
+    }
+
     .servicos-lista {
         grid-template-columns: repeat(2, 1fr);
     } 
     .servicos-lista div img{
         height: 15vh;   
     }
+
+    
 }
 
 @media screen and (min-width: 0px) and (max-width: 500px) {
+    .servicos {
+        padding: 750px 0 600px 0;
+    }
+    
     .servicos-lista {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -166,4 +185,8 @@
     .servicos {
         background-repeat: repeat;
     }
+}
+
+footer {
+    background-color: var(--verde-appso);
 }
