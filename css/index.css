@@ -108,7 +108,7 @@ body{
 .sobre-plataforma {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-image: url(../imagens/paper-green-white.jpg);
+    background-image: url(../imagens/paper-white-green.jpg);
     background-size: cover;
     height: 100vh;
 }
@@ -235,6 +235,7 @@ body{
 
 .servicos {
     padding: 100px 0;
+    font-size: 3vh;
     background-color: white;
     background-size: cover;
     height: 90vh;
@@ -262,7 +263,7 @@ body{
     height: 25vh;
 }
 
-@media screen and (max-width: 1150px){
+@media screen and (max-width: 1300px){
     .servicos {
         padding: 75px 0 0 0;
     }
@@ -277,11 +278,11 @@ body{
     
 }
 
-@media screen and (min-width: 0px) and (max-width: 500px) {
+@media screen and (min-width: 0px) and (max-width: 600px) {
     .titulo-servico {
         text-align: center;
         font-size: 25px;
-        padding: 0 0 50px 0;
+        padding: 20px 25px 50px 25px;
         color: rgb(25, 121, 46);
     }
     
@@ -306,6 +307,141 @@ body{
 
 }
 
+/* Benefícios */
+.beneficios{
+    background-image: url(../imagens/green-paper.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.beneficios-titulo{
+    display: grid;
+    place-items: center;
+    padding: 50px 0 0 0;
+}
+
+.beneficios-titulo-img{
+    display: inline-flex;
+}
+
+.beneficios-titulo-img img{
+    height: 10vh;
+}
+
+.beneficios-titulo-img h1{
+    display: grid;
+    place-items: center;
+    color: white;
+    font-size: 8vh;
+}
+
+.beneficios-processo{
+    padding: 20px 0 0 0;
+    display: grid;
+    place-items: center;
+    color: white;
+}
+
+.planet{
+    width: 100vh;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1650px){
+    .beneficios-titulo-img h1{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1000px){
+    .beneficios{
+        margin: 200px 0 0 0;
+    }
+
+    .beneficios-titulo-img h1{
+        font-size: 25px;
+        padding: 0 10px 50px 10pxs;
+    }
+
+    .planet{
+        width: 70vh;
+    }
+
+}
+
+@media screen and (max-width: 650px){
+
+    .beneficios{
+        height: 60vh;
+    }
+
+    .planet{
+        width: 40vh;
+    }
+
+    .beneficios-titulo-img img{
+        height: 5vh;
+    }
+
+    .beneficios-titulo-img h1{
+        font-size: 15px;
+        padding: 0 10px 50px 10px;
+    }
+
+    .beneficios-processo div h2{
+        font-size: 12px;
+    }
+
+    .beneficios-processo div ul li{
+        font-size: 10px;
+    }    
+
+}
+
+@media screen and (max-width: 400px){
+    .planet{
+        width: 20vh;
+    }
+}
+
+/* Gestão dos Reciclados*/
+.reciclados section{
+    display: grid;
+    place-items: center;
+}
+
+.reciclados section img{
+    height: 75vh;
+    padding: 0 0 100px 0;
+}
+
+@media screen and (max-width: 1400px){
+    .reciclados section img{
+        height: 55vh;
+        padding: 0 0 100px 0;
+    }
+}
+
+@media screen and (max-width: 820px){
+    .reciclados section img{
+        height: 35vh;
+        padding: 0 0 100px 0;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .reciclados section img{
+        height: 20vh;
+        padding: 0 0 100px 0;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .reciclados section img{
+        height: 10vh;
+        padding: 0 0 100px 0;
+    }
+}
+
 /* Parceiros */
 .parceiros-lista{
     display: grid;
@@ -324,6 +460,7 @@ body{
 }
 
 .parceiros-lista div p{
+    font-size: 3vh;
     color: rgb(25, 121, 46);
     text-align: center;
 }
@@ -344,7 +481,7 @@ body{
 @media screen and (min-width: 0px) and (max-width: 500px) {
     
     .parceiros-lista div{
-        padding: 0 0 120px 0;
+        padding: 0 0 40px 0;
     }
 
     .parceiros-lista {
@@ -367,42 +504,73 @@ body{
 .contato-divisao{
     display: grid;
     place-items: center;
-    grid-template-columns: 1fr 1fr;
-}
-
-.contato-divisao p{
-    padding: 0 0 10px 0;
 }
 
 .contato-divisao img{
-    height: 15vh;
-    padding: 0 0 50px 0;
-}
-
-@media screen and (min-width: 0px) and (max-width: 600px){
-    .contato-divisao{
-        grid-template-columns: 1fr;
-    }
-
-    .contato-divisao p{
-        text-align: center;
-    }
-
-    .contato-divisao img{
-        height: 5vh;
-    }
-}
-
-@media screen and (min-width: 0px) and (max-width: 300px){
-    .contato-divisao p{
-        font-size: 10px;
-    }
+    height: 10vh;
 }
 
 /* Rodapé */
 footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
     background-color: rgb(25, 121, 46);
+    background: linear-gradient(90deg, rgba(25,121,46,1) 0%, rgba(25,121,46,1) 35%, rgba(20,182,56,1) 100%);
+    /* background-image: url(../imagens/green-paper.jpg); */
+    background-size: cover;
+    border-radius: 100px 0 0 0;  
     color: white;
     text-align: center;
+    padding: 40px;
+}
+
+.links-uteis a{
+    text-decoration: none;
+    color: White;
+    transition: 0.5s;
+}
+
+.links-uteis a:hover{
+    transition: 0.5s;
+    color: rgb(92, 255, 146);
+}
+
+.footer-social{
     padding: 10px;
+}
+
+.footer-social a img{
+    height: 5vh;
+    padding: 0 5px;
+}
+
+.footer-logo{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.footer-logo img{
+    height: 8vh;
+}
+
+
+@media screen and (max-width: 1150px){
+
+    footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer section {
+        padding: 25px;
+    }
+
+}
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+
+    footer {
+        grid-template-columns: 1fr;
+    }
+
 }
