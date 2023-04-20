@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "./static/css/main.b109e957.css",
+    "main.js": "./static/js/main.43fa0685.js",
+    "static/media/reverlogo.png": "./static/media/reverlogo.c1f34b604c9e30321dd0.png",
+    "index.html": "./index.html",
+    "main.b109e957.css.map": "./static/css/main.b109e957.css.map",
+    "main.43fa0685.js.map": "./static/js/main.43fa0685.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b109e957.css",
+    "static/js/main.43fa0685.js"
+  ]
+}
