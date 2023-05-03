@@ -1,14 +1,13 @@
 {
   "files": {
-    "main.css": "./static/css/main.b109e957.css",
-    "main.js": "./static/js/main.43fa0685.js",
-    "static/media/reverlogo.png": "./static/media/reverlogo.c1f34b604c9e30321dd0.png",
+    "main.css": "./static/css/main.348e9f52.css",
+    "main.js": "./static/js/main.e62d1352.js",
     "index.html": "./index.html",
-    "main.b109e957.css.map": "./static/css/main.b109e957.css.map",
-    "main.43fa0685.js.map": "./static/js/main.43fa0685.js.map"
+    "main.348e9f52.css.map": "./static/css/main.348e9f52.css.map",
+    "main.e62d1352.js.map": "./static/js/main.e62d1352.js.map"
   },
   "entrypoints": [
-    "static/css/main.b109e957.css",
-    "static/js/main.43fa0685.js"
+    "static/css/main.348e9f52.css",
+    "static/js/main.e62d1352.js"
   ]
 }
