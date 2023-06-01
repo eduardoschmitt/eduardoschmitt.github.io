@@ -88,6 +88,7 @@ header {
 .mapa {
     display: grid;
     place-items: center;
+    padding-bottom: 100px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -227,8 +228,10 @@ header {
 
     #map { 
         height: 40vh;
-        width: 80vw; 
+        width: 80vw;
     }
+
+
 }
 
 @media only screen and (min-width: 1200px) {
