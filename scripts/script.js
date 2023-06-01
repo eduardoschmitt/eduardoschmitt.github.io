@@ -1,5 +1,6 @@
 var map = L.map('map').setView([-28.6729, -49.3731], 13);
 
+/* Marcações */
 var markerPostoChile = L.marker([-28.684761682540767, -49.34613407787312]).addTo(map);
 markerPostoChile.bindPopup("<b>Posto Chile</b><br><b/>R. Miguel Patrício de Souza, 150<br>Ceará</b><br>Criciúma - SC").openPopup();
 
@@ -36,7 +37,36 @@ markerParqueImigrantes.bindPopup("<b>Parque dos Imigrantes</b><br>R. Jose Geroni
 var markerFortunato = L.marker([-28.63869694157338, -49.3872091340661]).addTo(map);
 markerFortunato.bindPopup("<b>Escola Municipal Fortunato</b><br>R. Itália, 70<br>Mina do Toco<br>Criciúma - SC").openPopup();
 
+
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
+
+// Função para alternar entre o modo de tela cheia e o modo normal
+function toggleFullScreen() {
+  var mapElement = document.getElementById('map');
+  if (!document.fullscreenElement) {
+    mapElement.requestFullscreen();
+  } else {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    }
+  }
+}
+
+// Adicione um botão de fullscreen personalizado com ícone personalizado
+L.Control.Fullscreen = L.Control.extend({
+  onAdd: function (map) {
+    var container = L.DomUtil.create('div', 'leaflet-control-fullscreen leaflet-bar leaflet-control');
+    container.innerHTML = '<a href="#" class="leaflet-control-fullscreen-button" title="Toggle Fullscreen" role="button"><i class="fa-sharp fa-solid fa-expand"></i></a>';
+    container.querySelector('a').addEventListener('click', toggleFullScreen);
+    return container;
+  }
+});
+
+L.control.fullscreen = function (options) {
+  return new L.Control.Fullscreen(options);
+};
+
+L.control.fullscreen().addTo(map);
