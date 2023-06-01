@@ -1,1 +1,56 @@
-<!doctype html><html lang="pt-br"><head><meta charset="utf-8"/><link rel="icon" href="./favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="O aplicativo Rever é uma plataforma de gestão ambiental que oferece uma ampla gama de facilidades tanto para cidadãos quanto para gestores públicos. Com o aplicativo, você pode acessar recursos modernos e práticos para a gestão pública ambiental na palma da sua mão. Descubra como o Rever pode ajudá-lo a tornar a gestão ambiental mais eficiente e sustentável."/><meta name="author" content="Eduardo Schmitt"/><meta name="robots" content="index, follow"/><meta property="og:title" content="Rever - Documentação"/><meta property="og:image" content="/images/capa.jpg"/><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Rever Documentação"/><meta name="twitter:description" content="Conheça o aplicativo REVER: uma plataforma de gestão ambiental para cidadãos e gestão pública. Com recursos na palma da mão, é moderno, prático e completo para gestão pública ambiental. #REVER #gestãoambiental #sustentabilidade"/><link rel="apple-touch-icon" href="./logo192.png"/><link rel="manifest" href="./manifest.json"/><title>Rever Documentação</title><script defer="defer" src="./static/js/main.e62d1352.js"></script><link href="./static/css/main.348e9f52.css" rel="stylesheet"></head><body><noscript>Você precisa habilitar o JavaScript para executar este aplicativo.</noscript><div id="root"></div></body></html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <!-- Map Api -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <title>Coletas Rever</title>
+</head>
+<body>
+    <header>
+        <div>
+            <!-- Logo -->
+            <img class="rever-logo" src="images/logo.png" alt="Logo Rever">
+        </div>
+        <ul class="menu-opcoes">
+
+        </ul>
+        <div class="div-botao">
+            <button>Acessar o Rever</button>
+        </div>
+    </header>
+    <main>
+        <section class="inicio">
+            <div class="inicio-esq">
+                <h1>Explore os pontos de coleta de materiais recicláveis em sua região</h1>
+                <h2>Descubra os pontos de coleta de recicláveis em Criciúma, SC e faça sua parte pela sustentabilidade!</h2>
+            </div>
+            <div class="inicio-dir">
+                <img src="images/recycle.svg" alt="">
+            </div>
+        </section>
+        <!-- Mapa -->
+        <section class="mapa">
+            <div id="map">
+
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
