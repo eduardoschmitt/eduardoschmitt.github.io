@@ -54,10 +54,17 @@ header {
     border: none;
     width: 150px;
     height: 50px;
+    transition: box-shadow 0.7s ease;
 }
 
 .div-botao button:hover {
-    background: blue;
+    box-shadow: 1px 1px 10px rgba(0, 60, 10, 0.3);
+    cursor: pointer;
+}
+
+.div-botao a {
+    color: white;
+    text-decoration: none;
 }
 
 /* Inicio */
@@ -80,6 +87,10 @@ header {
     font-weight: bold;
     font-size: 65px;
     padding-bottom: 25px;
+}
+
+.icon-recycle {
+    width: 45px;
 }
 
 .inicio-esq h2 {
