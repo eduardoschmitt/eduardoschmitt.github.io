@@ -37,12 +37,72 @@ markerParqueImigrantes.bindPopup("<b>Parque dos Imigrantes</b><br>R. Jose Geroni
 var markerFortunato = L.marker([-28.63869694157338, -49.3872091340661]).addTo(map);
 markerFortunato.bindPopup("<b>Escola Municipal Fortunato</b><br>R. Itália, 70<br>Mina do Toco<br>Criciúma - SC").openPopup();
 
-
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
+// Verifica se o dispositivo suporta o modo de tela cheia
+function isMobileFullscreenSupported() {
+  return (
+    document.documentElement.requestFullscreen ||
+    document.documentElement.mozRequestFullScreen ||
+    document.documentElement.webkitRequestFullscreen ||
+    document.documentElement.msRequestFullscreen
+  );
+}
+
+// Função para alternar entre o modo de tela cheia e o modo normal
+function toggleFullScreen() {
+  var mapElement = document.getElementById('map');
+  if (isMobileFullscreenSupported()) {
+    if (!document.fullscreenElement) {
+      if (mapElement.requestFullscreen) {
+        mapElement.requestFullscreen();
+      } else if (mapElement.mozRequestFullScreen) {
+        mapElement.mozRequestFullScreen();
+      } else if (mapElement.webkitRequestFullscreen) {
+        mapElement.webkitRequestFullscreen();
+      } else if (mapElement.msRequestFullscreen) {
+        mapElement.msRequestFullscreen();
+      }
+    } else {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      } else if (document.mozCancelFullScreen) {
+        document.mozCancelFullScreen();
+      } else if (document.webkitExitFullscreen) {
+        document.webkitExitFullscreen();
+      } else if (document.msExitFullscreen) {
+        document.msExitFullscreen();
+      }
+    }
+  }
+}
+
+// Adicione um botão de fullscreen personalizado com ícone personalizado apenas para dispositivos móveis
+if (isMobileFullscreenSupported()) {
+  L.Control.Fullscreen = L.Control.extend({
+    onAdd: function (map) {
+      var container = L.DomUtil.create(
+        'div',
+        'leaflet-control-fullscreen leaflet-bar leaflet-control'
+      );
+      container.innerHTML =
+        '<a href="#" class="leaflet-control-fullscreen-button" title="Toggle Fullscreen" role="button"><i class="fa-sharp fa-solid fa-expand"></i></a>';
+      container.querySelector('a').addEventListener('click', toggleFullScreen);
+      return container;
+    }
+  });
+
+  L.control.fullscreen = function (options) {
+    return new L.Control.Fullscreen(options);
+  };
+
+  L.control.fullscreen().addTo(map);
+}
+
+/*
 // Função para alternar entre o modo de tela cheia e o modo normal
 function toggleFullScreen() {
   var mapElement = document.getElementById('map');
@@ -70,3 +130,4 @@ L.control.fullscreen = function (options) {
 };
 
 L.control.fullscreen().addTo(map);
+*/
