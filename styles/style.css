@@ -91,6 +91,10 @@ header {
     padding-bottom: 100px;
 }
 
+.btn-tela-cheia {
+    display: none;
+}
+
 /* Card */
 .cards {
     display: grid;
@@ -210,6 +214,16 @@ header {
         padding-bottom: 25px;
     }
 
+    .btn-tela-cheia {
+        text-decoration: none;
+        color: #00cc00; /* Verde escuro */
+        background-color: #ccffcc; /* Verde claro */
+        margin: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        display: grid;
+    }
+
     /* Card */
     .cards {
         grid-template-columns: repeat(1, 1fr);
@@ -287,6 +301,16 @@ header {
     #map { 
         height: 70vh;
         width: 75vw; 
+    }
+
+    .btn-tela-cheia {
+        text-decoration: none;
+        color: #00cc00; /* Verde escuro */
+        background-color: #ccffcc; /* Verde claro */
+        margin: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        display: grid;
     }
 
     /* Card */
