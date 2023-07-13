@@ -1,168 +1,225 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@700&family=Roboto&display=swap" rel="stylesheet">
-    <!-- Map Api -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-    crossorigin=""/>
-    <!-- Leaflet.fullscreen JavaScript -->
-    <script src="https://unpkg.com/leaflet-fullscreen@1.0.2/dist/Leaflet.fullscreen.js"></script>
-    <script src="https://kit.fontawesome.com/6c4f97555f.js" crossorigin="anonymous"></script>
-    <title>Coletas Rever</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!-- Otimização de mecanismos de pesquisa -->
+    <title>Appso Tecnologia</title>
+    <meta name="description" content="Appso Tecnologia - Soluções para o Bem Comum. Rever Ambiental e Rever Cidadão">
+    <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+    <link rel="canonical" href="http://appsotecnologia.com.br/"/>
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Appso Tecnologia - Soluções para o Bem Comum" />
+    <meta property="og:description" content="Appso é uma empresa de impacto social, criada com uma perspectiva diferente, onde o seu resultado principal é o bem comum para a sociedade. Fornecemos soluções tecnológicas que ajudam a resolver problemas sociais, melhorando o mundo e a vida das pessoas." />
+    <meta property="og:url" content="http://appsotecnologia.com.br/" />
+    <meta property="og:site_name" content="Appso" />
+    <meta property="og:updated_time" content="2022-11-18T00:00:00-00:00" />
+    <meta property="article:published_time" content="2022-11-18T00:00:00-00:00" />
+    <meta property="article:modified_time" content="2022-11-18T00:00:00-00:00" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Appso Tecnologia - Soluções para o Bem Comum" />
+    <meta name="twitter:description" content="Appso é uma empresa de impacto social, criada com uma perspectiva diferente, onde o seu resultado principal é o bem comum para a sociedade. Fornecemos soluções tecnológicas que ajudam a resolver problemas sociais, melhorando o mundo e a vida das pessoas." />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Footer-Dark-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/Simple-Slider-Simple-Slider.css">
+    <link rel="stylesheet" href="assets/css/Team-images.css">
+    <link rel="stylesheet" href="assets/css/duh-styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.theme.default.min.css">
+    <!-- Owl javascript -->
+    <script src="assets/vendors/jquery.min.js"></script>
+    <script src="assets/owlcarousel/owl.carousel.js"></script>
 </head>
+
 <body>
-    <header>
-        <div>
-            <!-- Logo -->
-            <img class="rever-logo" src="images/logo.png" alt="Logo Rever">
+    <nav class="navbar navbar-light navbar-expand-md py-3 transparent-nav">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="assets/img/logo.png" alt="Logotipo Appso Tecnologia" width="139" height="61">
+            </a>
+            <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2">
+            <span class="visually-hidden">Toggle navigation</span>
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navcol-2">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://revercidadao.appsotecnologia.com.br/" target="_blank">Rever Cidadão</a></li>
+            </ul>
+            </div>
         </div>
-        <div class="div-botao">
-            <a href="https://revercidadao.appsotecnologia.com.br/" target="_blank"><button>Acessar o Rever</button></a>
+    </nav>          
+    <!-- Inicio -->
+    <div class="container-inicial">
+        <div class="textos-inicio">
+            <h1>Soluções para o Bem comum</h1>
+            <h2>Transformando o mundo através da tecnologia e do compromisso social.</h2>
+            <a href="">Contato</a>
         </div>
-    </header>
-    <main>
-        <section class="inicio">
-            <div class="inicio-esq">
-                <h1>Explore os pontos de coleta de materiais recicláveis em sua região <img src="images/icon-recycle.png" alt="ícone com o símbolo da reciclagem" class="icon-recycle"></h1>
-                <h2>Descubra os pontos de coleta de recicláveis em Criciúma, SC e faça sua parte pela sustentabilidade!</h2>
+        <div class="carrousel-inicio">
+            <div class="owl-carousel owl-lazy carousel1">
+                <div class="item"><img src="assets/img/carroussel/planet.png" alt="Imagem 1"></div>
+                <div class="item"><img src="assets/img/carroussel/carrossel-cidades.png" alt="Imagem 2"></div>
+                <div class="item"><img src="assets/img/carroussel/carrossel-rever.png" alt="Imagem 3"></div>
             </div>
-            <div class="inicio-dir">
-                <img src="images/recycle.svg" alt="">
+        </div>
+        <!-- <div class="inicial-img">
+            <img src="assets/img/world3.png" alt="" class="triangulo">
+        </div> -->
+    </div>
+    <!-- Fim Inicio -->
+    <div class="container py-4 py-xl-5">
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col"><img src="assets/img/rever-un-2.png" alt="Logotipo Rever" style="width:100%;"></div>
+            <div class="col d-flex flex-column justify-content-center p-4">
+                <div class="text-center text-md-start d-flex flex-column align-items-center align-items-md-start mb-5">
+                    <div>
+                        <h4>Rever</h4>
+                        <p>O aplicativo REVER é uma plataforma de gestão ambiental inovadora. Nossa plataforma oferece uma ampla gama de facilidades tanto para os cidadãos quanto para a gestão pública, proporcionando recursos acessíveis na palma da mão, por meio de uma plataforma moderna, prática e repleta de recursos essenciais para a gestão pública ambiental.</p><a href="rever/index.html">Leia Mais&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
+                            </svg></a>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
+    </div>
+    <div class="container py-4 py-xl-5">
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col"><img src="assets/img/senior-un.png" alt="Logotipo Rever" style="width:100%;"></div>
+            <div class="col d-flex flex-column justify-content-center p-4">
+                <div class="text-center text-md-start d-flex flex-column align-items-center align-items-md-start mb-5">
+                    <div>
+                        <h4>Suporte Senior</h4>
+                        <p>A nossa empresa oferece serviços de suporte para ERP Senior, com especialização em programação de regras, relatórios e solução de erros. Além disso, também desenvolvemos projetos personalizados e sistemas web integrados com o ERP, proporcionando soluções completas e eficientes para as necessidades da sua empresa. Conte conosco para garantir a maximização dos benefícios do seu Sistema ERP Senior.</span><br></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container py-4 py-xl-5">
+        <div class="row mb-4 mb-lg-5">
+            <div class="col-md-8 col-xl-6 text-center mx-auto">
+                <h2>Nossos Parceiros</h2>
+                <p class="w-lg-50">Conheça alguns de nossos parceiros que utilizam as soluções da Appso</p>
+            </div>
+        </div>
+        <div class="row gy-4 row-cols-2 row-cols-md-4">
+            <div class="owl-carousel carousel2">
+                <div class="col item">
+                    <div class="card border-0 shadow-none custom-card">
+                        <div class="card-body text-center d-flex flex-column align-items-center p-0"><img class="rounded-circle mb-3 fit-cover" alt="Brasão Prefeitura de Criciúma" style="width: 170px; height: 170px;" src="assets/img/Parceiros/criciuma.png">
+                            <h5 class="fw-bold text-primary card-title mb-0">Prefeitura de Cricíuma</h5>
+                            <p class="text-muted card-text mb-2">Rever</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col item">
+                    <div class="card border-0 shadow-none custom-card">
+                        <div class="card-body text-center d-flex flex-column align-items-center p-0"><img class="rounded-circle mb-3 fit-cover" alt="Brasão Prefeitura de Nova Veneza" style="width: 170px; height: 170px;" src="assets/img/Parceiros/novaveneza-remaster.png">
+                            <h5 class="fw-bold text-primary card-title mb-0">Prefeitura de Nova Veneza</h5>
+                            <p class="text-muted card-text mb-2">Rever</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col item">
+                    <div class="card border-0 shadow-none custom-card">
+                        <div class="card-body text-center d-flex flex-column align-items-center p-0"><img class="rounded-circle mb-3 fit-cover" alt="Logotipo TSA Química" style="width: 170px; height: 170px;" src="assets/img/Parceiros/projeto-tsa.png">
+                            <h5 class="fw-bold text-primary card-title mb-0">TSA Química</h5>
+                            <p class="text-muted card-text mb-2">Aplicações Web</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col item">
+                    <div class="card border-0 shadow-none custom-card">
+                        <div class="card-body text-center d-flex flex-column align-items-center p-0"><img class="rounded-circle mb-3 fit-cover" alt="Logotipo Unnicola" style="width: 170px; height: 170px;" src="assets/img/Parceiros/unnicola.png">
+                            <h5 class="fw-bold text-primary card-title mb-0">Unnicola</h5>
+                            <p class="text-muted card-text mb-2">Aplicações Web</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col item">
+                    <div class="card border-0 shadow-none custom-card">
+                        <div class="card-body text-center d-flex flex-column align-items-center p-0"><img class="rounded-circle mb-3 fit-cover" alt="Logotipo Prefeitura Morro da Fumaça" style="width: 170px; height: 170px;" src="assets/img/Parceiros/morrofumaca.png">
+                            <h5 class="fw-bold text-primary card-title mb-0">Prefeitura Morro da Fumaça</h5>
+                            <p class="text-muted card-text mb-2">Rever</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col item">
+                    <div class="card border-0 shadow-none custom-card">
+                        <div class="card-body text-center d-flex flex-column align-items-center p-0"><img class="rounded-circle mb-3 fit-cover" alt="Logotipo Prefeitura de Içara" style="width: 170px; height: 170px;" src="assets/img/Parceiros/icara.png">
+                            <h5 class="fw-bold text-primary card-title mb-0">Prefeitura de Içara</h5>
+                            <p class="text-muted card-text mb-2">Rever</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <!-- Mapa -->
-        <section class="mapa">
-            <div id="map"></div>
-            <a class="btn-tela-cheia" href="map.html">Tela Cheia</a>
-        </section>
-
-        <!-- Cards -->
-        <section class="cards">
-            <div class="card">
-                <img class="card-img" src="https://static.ndmais.com.br/2021/11/famcri.jpg" alt="FAMCRI">
-                <div class="card-conteudo">
-                    <h1 class="card-titulo">FAMCRI</h1>
-                    <p class="card-texto">R. Henrique Lage, 1873 - Santa Barbara, Criciúma - SC</p>
-                    <p class="card-texto">Horário: 08h às 17h de segunda a sexta</p>
-                    <a href="https://www.google.com.br/maps/place/FAMCRI/@-28.6871081,-49.3895244,17z/data=!3m1!4b1!4m11!1m3!11m2!2soRh-Ak3pRa-u77IFqYwnlA!3e3!3m6!1s0x952183c836b4c24d:0xf864927424e13824!8m2!3d-28.6871129!4d-49.3846535!15sCgEqkgESdXRpbGl0eV9jb250cmFjdG9y4AEA!16s%2Fg%2F11g_rml6pz?entry=ttu" target="_blank"><button class="card-botao">Abrir no Google Maps <img src="images/google-maps.png" class="g-map" alt=""></button></a>
+    <section class="py-4 py-xl-5">
+        <div class="text-white bg-primary border rounded border-0 p-4 py-5 custom-who">
+            <div class="row h-100" style="padding-left: 0px;">
+                <div class="col-md-10 col-xl-8 text-center d-flex d-sm-flex d-md-flex justify-content-center align-items-center mx-auto justify-content-md-start align-items-md-center justify-content-xl-center">
+                    <div>
+                        <h1 class="text-uppercase fw-bold text-white mb-3" id="sobre">QUEM SOMOS</h1>
+                        <br>
+                        <h6 class="subtitle">TECNOLOGIA EM PROL DA SOCIEDADE</h6>
+                        <p class="lead">A Appso é uma empresa de impacto social, criada com uma perspectiva diferenciada, cujo objetivo principal é promover o bem comum para a sociedade. Nossa abordagem é coletiva, buscando constantemente melhorar a vida das pessoas e preservar nosso planeta por meio do trabalho que realizamos. Integrando inovação e tecnologia, buscamos a evolução dos processos para solucionar problemas sociais. Mantemos nosso olhar voltado para o futuro da sociedade e do planeta, sem deixar de reconhecer a importância do presente, onde escrevemos, a cada dia, o legado que deixaremos para as futuras gerações.</p>                       
+                        <p class="lead">Somos uma empresa formada por pessoas, para pessoas, e acreditamos na união delas por meio da tecnologia para criar um mundo melhor para todos. Convidamos você a se juntar a nós nessa missão.</p>                        
+                        <br>
+                        <h6 class="subtitle">MISSÃO</h6>                      
+                        <p class="lead">Fornecer soluções tecnológicas que contribuam para resolver problemas sociais, melhorando o mundo e a vida das pessoas.</p>                      
+                        <br>
+                        <h6 class="subtitle">VISÃO</h6>                       
+                        <p class="lead">Ser reconhecida internacionalmente como uma empresa que oferece soluções inovadoras, comprometida com o bem-estar global e com a sociedade.</p>                       
+                        <br>
+                        <h6 class="subtitle">VALORES</h6>                      
+                        <p class="lead">Valorizamos as pessoas, temos compromisso social, buscamos resultados efetivos, priorizamos a sustentabilidade, agimos com seriedade e estimulamos a inovação.</p>                       
+                        <br>
+                        <img alt="Logotipo Appso Tecnologia" src="assets/img/logo_white.png">                        
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img class="card-img" src="https://tnsul.com/wp-content/uploads/2021/09/Parque_das_Nacoes_Foto_Ana_De_Mattia_2.jpeg" alt="Parque Cincinato Naspolini">
-                <div class="card-conteudo">
-                    <h1 class="card-titulo">Parque das Nações</h1>
-                    <p class="card-texto">Av. Centenário - Próspera, Criciúma - SC</p>
-                    <p class="card-texto">Horário: 08h às 17h de segunda a sexta</p>
-                    <a href="https://www.google.com.br/maps/place/Park+of+Nations+Cincinnatus+Naspolini+-+Av.+Centen%C3%A1rio+-+Pr%C3%B3spera,+SC/@-28.6848967,-49.3663259,14z/data=!4m7!1m3!11m2!2soRh-Ak3pRa-u77IFqYwnlA!3e3!3m2!1s0x9521788e89bca947:0xa3b962994151fa37!15sCgEqWgMiASqSAQRwYXJr4AEA?entry=ttu" target="_blank"><button class="card-botao">Abrir no Google Maps <img src="images/google-maps.png" class="g-map" alt=""></button></a>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Bandeira_Criciuma_SantaCatarina_Brasil.jpg" alt="Intendência Quarta Linha">
-                <div class="card-conteudo">
-                    <h1 class="card-titulo">Intendência Quarta Linha</h1>
-                    <p class="card-texto">Rod. Luiz Rosso, 10200 - Quarta Linha, Criciúma - SC</p>
-                    <p class="card-texto">Horário: 08h às 17h de segunda a sexta</p>
-                    <a href="https://www.google.com.br/maps/place/Rod.+Luiz+Rosso,+10200+-+Quarta+Linha,+Crici%C3%BAma+-+SC,+88820-000/@-28.7810164,-49.3707212,17z/data=!3m1!4b1!4m11!1m3!11m2!2soRh-Ak3pRa-u77IFqYwnlA!3e3!3m6!1s0x9521801dfc9eb53b:0x2a8d4b5d1a2a5fb6!8m2!3d-28.7810212!4d-49.3658503!15sCgEqkgERY29tcG91bmRfYnVpbGRpbmfgAQA!16s%2Fg%2F11gdkzgntw?entry=ttu" target="_blank"><button class="card-botao">Abrir no Google Maps <img src="images/google-maps.png" class="g-map" alt=""></button></a>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img" src="https://scontent.fccm10-1.fna.fbcdn.net/v/t39.30808-6/300565711_501163175345371_7753386743789861155_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=e3f864&_nc_ohc=nDwfjLRRCLsAX9zqjD7&_nc_oc=AQlgQ9WSfSmeGORlPo26Yvsew63QPdrxbjcnpciA6gTIay1LlZjn8VM6lfWA9yocdhI&_nc_ht=scontent.fccm10-1.fna&oh=00_AfDMOMfdm4Oqw3OSR2uyjN79-TJhC2zP3FNLTeoOwzrWfA&oe=647ECDE1" alt="Auto Posto HG - Shell">
-                <div class="card-conteudo">
-                    <h1 class="card-titulo">Auto Posto HG - Shell</h1>
-                    <p class="card-texto">KM 08 - Rod. Luiz Rosso, 9330 - Quarta Linha, Criciúma - SC</p>
-                    <p class="card-texto">Horário: 08h às 22h de segunda a sábado</p>
-                    <a href="https://www.google.com.br/maps/place/Auto+Posto+HG+-+Posto+Shell/@-28.773622,-49.3711216,17z/data=!3m1!4b1!4m11!1m3!11m2!2soRh-Ak3pRa-u77IFqYwnlA!3e3!3m6!1s0x952182089c5f0fe9:0xb1ba9f56aeccb94b!8m2!3d-28.7736268!4d-49.3662507!15sCgEqkgELZ2FzX3N0YXRpb27gAQA!16s%2Fg%2F11c205q6p7?entry=ttu" target="_blank"><button class="card-botao">Abrir no Google Maps <img src="images/google-maps.png" class="g-map" alt=""></button></a>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img" src="https://tnsul.com/wp-content/uploads/2020/04/558ebdce-d9fc-47da-9cd0-079977da7911.jpg" alt="Ecoponto">
-                <div class="card-conteudo">
-                    <h1 class="card-titulo">Ecoponto</h1>
-                    <p class="card-texto">Ao Lado da Usina de Asfalto - Santa Barbara, Criciúma - SC</p>
-                    <p class="card-texto">Horário: 08h às 17h de segunda a sexta</p>
-                    <a href="https://www.google.com.br/maps/place/Ecoponto/@-28.7317552,-49.4071612,17z/data=!3m1!4b1!4m11!1m3!11m2!2soRh-Ak3pRa-u77IFqYwnlA!3e3!3m6!1s0x952183124decd8d1:0x9244edb6c16fede8!8m2!3d-28.73176!4d-49.4022903!15sCgEqkgEMZ2FyYmFnZV9kdW1w4AEA!16s%2Fg%2F11hwx95lby?entry=ttu" target="_blank"><button class="card-botao">Abrir no Google Maps <img src="images/google-maps.png" class="g-map" alt=""></button></a>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Bandeira_Criciuma_SantaCatarina_Brasil.jpg" alt="FAMCRI">
-                <div class="card-conteudo">
-                    <h1 class="card-titulo">Intendência Santa Luzia</h1>
-                    <p class="card-texto">R. Getúlio Cândido Albino, 558-630 - Vila Nova Esperanca</p>
-                    <p class="card-texto">Horário: 08h às 17h de segunda a sexta</p>
-                    <a href="https://www.google.com.br/maps/place/Intend%C3%AAncia+Prefeitura+Santa+Luzia/@-28.7060364,-49.4340117,17z/data=!3m1!4b1!4m11!1m3!11m2!2soRh-Ak3pRa-u77IFqYwnlA!3e3!3m6!1s0x952183f4e4f0c0f5:0xb4e583366c3a9bb2!8m2!3d-28.7060412!4d-49.4291408!15sCgEqkgESdXRpbGl0eV9jb250cmFjdG9y4AEA!16s%2Fg%2F11g1lgydy7?entry=ttu" target="_blank"><button class="card-botao">Abrir no Google Maps <img src="images/google-maps.png" class="g-map" alt=""></button></a>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img" src="https://scontent.fccm10-1.fna.fbcdn.net/v/t39.30808-6/258859083_111816181316329_5360833898486587392_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=WwBNP0mzjtAAX8i43bI&_nc_ht=scontent.fccm10-1.fna&oh=00_AfCRMtbVQOlaYO112MOfGmdUWX3FxDNcR7nCqeWpqBq5yA&oe=647E7540" alt="Intendência Rio Maina">
-                <div class="card-conteudo">
-                    <h1 class="card-titulo">Intendência Rio Maina</h1>
-                    <p class="card-texto">R. Miguel Nápoli, 547-595 - Vila Isabel, Criciúma - SC</p>
-                    <p class="card-texto">Horário: 08h às 17h de segunda a sexta</p>
-                    <a href="https://www.google.com.br/maps/place/Intendencia+Distrital+Subprefeitura+Rio+Maina/@-28.6752978,-49.426503,17z/data=!3m1!4b1!4m11!1m3!11m2!2soRh-Ak3pRa-u77IFqYwnlA!3e3!3m6!1s0x9521833eb27845ff:0xd40eb1380e9a00d3!8m2!3d-28.6753026!4d-49.4216321!15sCgEqkgEJY2l0eV9oYWxs4AEA!16s%2Fg%2F11c5bpypn1?entry=ttu" target="_blank"><button class="card-botao">Abrir no Google Maps <img src="images/google-maps.png" class="g-map" alt=""></button></a>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img" src="https://www.engeplus.com.br/cache/noticia/0127/0127905/parque-dos-imigrantes-diversao-atrativos-e-preservacao-da-cultura.jpg?t=20181231095337" alt="Parque dos Imigrantes">
-                <div class="card-conteudo">
-                    <h1 class="card-titulo">Parque dos Imigrantes</h1>
-                    <p class="card-texto">R. Jose Geronimo Mateus s/n Vila Francesa - Rio Maina, Criciúma - SC</p>
-                    <p class="card-texto">Horário: 08h às 17h de segunda a sexta</p>
-                    <a href="https://www.google.com.br/maps/place/Parque+dos+Imigrantes+-+Rio+Maina+Crici%C3%BAma/@-28.6848182,-49.3663259,14z/data=!4m11!1m3!11m2!2soRh-Ak3pRa-u77IFqYwnlA!3e3!3m6!1s0x9521838a6a132033:0x600ba30fb030c9d7!8m2!3d-28.6710832!4d-49.4172571!15sCgEqkgEEcGFya-ABAA!16s%2Fg%2F11flbxkw5k?entry=ttu" target="_blank"><button class="card-botao">Abrir no Google Maps <img src="images/google-maps.png" class="g-map" alt=""></button></a>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Bandeira_Criciuma_SantaCatarina_Brasil.jpg" alt="FAMCRI">
-                <div class="card-conteudo">
-                    <h1 class="card-titulo">Assoc. Moradores. Bairro Colonial </h1>
-                    <p class="card-texto">R. Virgílio Mondardo, 390 - Wosocris</p>
-                    <p class="card-texto">Horário: Comercial de segunda a sábado</p>
-                    <a href="https://www.google.com.br/maps/place/R.+Virg%C3%ADlio+Mondardo,+390+-+Wosocris,+Crici%C3%BAma+-+SC,+88818-338/@-28.6659793,-49.4338006,17z/data=!3m1!4b1!4m10!1m3!11m2!2soRh-Ak3pRa-u77IFqYwnlA!3e3!3m5!1s0x9521834ba96c3995:0x62d816b0d12ed211!8m2!3d-28.6659841!4d-49.4289297!15sCgEq4AEA?entry=ttu" target="_blank"><button class="card-botao">Abrir no Google Maps <img src="images/google-maps.png" class="g-map" alt=""></button></a>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Bandeira_Criciuma_SantaCatarina_Brasil.jpg" alt="Escola Fortunato">
-                <div class="card-conteudo">
-                    <h1 class="card-titulo">Escola Fortunato Brasil Naspolini</h1>
-                    <p class="card-texto">R. Itália, 70 - Mina do Toco, Criciúma - SC</p>
-                    <p class="card-texto">Horário: Sem horário disponível</p>
-                    <a href="https://www.google.com.br/maps/place/Escola+Municipal+E.+Infantil+de+Ensino+Fundamental+Fortunato+Brasil+Naspolini/@-28.6389653,-49.3926701,17z/data=!3m1!4b1!4m11!1m3!11m2!2soRh-Ak3pRa-u77IFqYwnlA!3e3!3m6!1s0x95219d3806e1730f:0x78584c5e8689a174!8m2!3d-28.6389701!4d-49.3877992!15sCgEqkgEGc2Nob29s4AEA!16s%2Fg%2F1tg7t5jm?entry=ttu" target="_blank"><button class="card-botao">Abrir no Google Maps <img src="images/google-maps.png" class="g-map" alt=""></button></a>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img" src="https://portallitoralsul.com.br/wp-content/uploads/2023/03/Area-do-lago-do-Parque-Municipal-Prefeito-Altair-Guidi-passara-por-revitalizacao.jpg" alt="Parque Altair Guidi">
-                <div class="card-conteudo">
-                    <h1 class="card-titulo">Parque Altair Guidi</h1>
-                    <p class="card-texto">Av. Centenário - Pinheirinho, Criciúma - SC</p>
-                    <p class="card-texto">Horário: 08h às 17h de segunda a sexta</p>
-                    <a href="https://www.google.com.br/maps/place/Parque+Municipal+Prefeito+Altair+Guidi+(Parque+Centen%C3%A1rio)/@-28.6909905,-49.3874521,17z/data=!3m1!4b1!4m11!1m3!11m2!2soRh-Ak3pRa-u77IFqYwnlA!3e3!3m6!1s0x9521826129e127bf:0xd60c5421c639db5a!8m2!3d-28.6909953!4d-49.3825812!15sCgEqkgEEcGFya-ABAA!16s%2Fg%2F11bzs476qc?entry=ttu" target="_blank"><button class="card-botao">Abrir no Google Maps <img src="images/google-maps.png" class="g-map" alt=""></button></a>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img" src="https://lh5.googleusercontent.com/p/AF1QipNZgDaB7AftPCveMA2WWU8FE-DnHE6Tq3KJDec6=s1031-k-no" alt="Posto Chile">
-                <div class="card-conteudo">
-                    <h1 class="card-titulo">Posto Chile</h1>
-                    <p class="card-texto">R. Miguel Patrício de Souza, 150 - Ceará, Criciúma - SC</p>
-                    <p class="card-texto">Horário: Comercial de segunda a sábado</p>
-                    <a href="https://www.google.com.br/maps/place/Posto+Chile/@-28.6849358,-49.3509835,17z/data=!3m1!4b1!4m11!1m3!11m2!2soRh-Ak3pRa-u77IFqYwnlA!3e3!3m6!1s0x95217996b18242a3:0xc29dd5427b4ea196!8m2!3d-28.6849406!4d-49.3461126!15sCgEqkgELZ2FzX3N0YXRpb27gAQA!16s%2Fg%2F11h1yw00fl?entry=ttu" target="_blank"><button class="card-botao">Abrir no Google Maps <img src="images/google-maps.png" class="g-map" alt=""></button></a>
-                </div>
-            </div>                 
-        </section>
-    </main>
-    <footer>
-
+        </div>
+    </section>
+    <footer class="text-center">
+        <div class="container text-muted py-4 py-lg-5" style="margin-top: -32px;">
+            <ul class="list-inline">
+                <li class="list-inline-item me-4"><a class="link-secondary" href="https://revercidadao.appsotecnologia.com.br/" target="_blank">Rever Cidadão</a></li>
+                <li class="list-inline-item me-4"><a class="link-secondary" href="https://rever.appsotecnologia.com.br/" target="_blank">Rever Web</a></li>
+                <li class="list-inline-item me-4"><a class="link-secondary" href="https://play.google.com/store/apps/details?id=br.com.appsotecnologia.appsoapp&amp;hl=pt_BR&amp;gl=US" target="_blank">Rever Android</a></li>
+                <li class="list-inline-item me-4"><a class="link-secondary" href="https://apps.apple.com/br/app/rever/id1463305410" target="_blank">Rever iOS</a></li>
+                <li class="list-inline-item"><a class="link-secondary" href="rever/index.html">Conheça o Rever</a></li>
+            </ul>
+            <ul class="list-inline">
+                <li class="list-inline-item me-4"><a href="https://www.facebook.com/appsotecnologia" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-facebook">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
+                        </svg></a></li>
+                <li class="list-inline-item me-4" href=""><a href="https://br.linkedin.com/company/appso-tecnologia-ltda" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-linkedin">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"></path>
+                        </svg></a></li>
+                <li class="list-inline-item"><a href="https://www.instagram.com/appsotecnologia/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-instagram">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+                        </svg></a></li>
+            </ul>
+            <p class="mb-0">Copyright © 2022-2023 Eduardo Schmitt</p>
+        </div>
     </footer>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-    crossorigin=""></script>
-    <script src="scripts/script.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
+    <script src="assets/js/Simple-Slider.js"></script>
+    <!-- vendors -->
+    <script src="assets/vendors/highlight.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/carousel.js"></script>
 </body>
+
 </html>

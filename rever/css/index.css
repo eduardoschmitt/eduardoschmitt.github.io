@@ -1,0 +1,623 @@
+/* Configurações Iniciais */
+:root {
+    --verde-appso: rgb(114, 219, 101);
+}
+
+* {
+    padding: 0;
+    margin: 0 auto;
+    font-family: 'Sora', 'Istok Web', sans-serif;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+/* Página Inicial */
+.apresentacao {
+    display: grid;
+    place-items: center;
+    background-image: url(../imagens/tree-resized.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.titulo {
+    display: grid;
+    place-items: center;
+}
+
+.titulo h1 { 
+    color: white;
+    font-size: 5vh;
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/istokweb/v20/3qTqojGmgSyUukBzKslhvU5q9GMVUBc.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: white;
+    font-size: 2.5vh;
+    font-weight: 400;
+    text-align: center;
+    width: 40vw;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.botoes{
+    padding: 10px 0;
+}
+
+.botao-descubra {
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);    
+    color: white;
+    border-style: solid;
+    border-color: var(--verde-appso);
+    background-color: var(--verde-appso);
+    margin: 5px;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+.botao-contato {
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: white;
+    border-style: solid;
+    margin: 5px;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 450px) {
+    .titulo h1 { 
+        font-size: 3vh;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.8vh;
+        width: 80vw;
+    }
+}
+
+@media only screen and (max-width: 250px) {
+    .botao-contato{
+        margin: 100px 0;
+    } 
+
+    .botao-descubra{
+        margin: 100px 0;
+    }
+
+    .titulo h1 { 
+        font-size: 2vh;
+    }   
+}
+
+@media only screen and (max-width: 210px) {
+    .titulo h1 { 
+        font-size: 12px;
+    }
+
+    .botoes{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+    .botao-contato{
+        margin: 10px;
+    } 
+
+    .botao-descubra{
+        margin: 10px;
+    }
+}
+
+
+/* Sobre */
+.sobre-plataforma {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url(../imagens/paper-white-green.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.sobre-plataforma-p {
+    display: grid;
+    place-content: center;
+    padding: 0 0 0 50px;
+    color: white;
+    font-size: 3vh;
+}
+
+.sobre-plataforma-p p {
+    padding: 0 0 30px 0;
+}
+
+.sobre-plataforma-p div{
+    padding: 0 0 25px 0;
+}
+
+
+.sobre-plataforma-img img {
+    display: grid;
+    justify-self: end;
+    height: 85vh;
+    padding: 40px 0;
+}
+
+@media only screen and (max-width: 970px) {
+    .sobre-plataforma {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre-plataforma-p {
+        padding: 0 20px;
+    }
+    
+    
+    .sobre-plataforma-p {
+        padding: 30px 0 0 0;
+        font-size: 25px;
+    }
+
+    .sobre-plataforma-p p {
+        padding: 0 20px;
+    }
+
+    .sobre-plataforma-p div {
+        padding: 0 20px;
+    }
+    
+
+    .sobre-plataforma-img {
+        display: grid;
+        place-items: center;
+    }
+
+
+    .sobre-plataforma-img img {
+        height: 55vh;
+    }
+
+}
+
+@media only screen and (max-width: 550px) {
+    .sobre-plataforma-p {
+        font-size: 20px;
+    }
+
+    .sobre-plataforma-img img {
+        height: 40vh;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .sobre-plataforma-p {
+        font-size: 17px;
+    }
+
+    .sobre-plataforma-img img {
+        height: 35vh;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    
+    .sobre-plataforma {
+        padding: 0;
+    }
+
+    .sobre-plataforma-p p{
+        font-size: 15px;
+    }
+
+    .sobre-plataforma-p div{
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 200px) {
+
+    .sobre-plataforma-p p{
+        font-size: 8px;
+    }
+
+    .sobre-plataforma-p div{
+        font-size: 8px;
+    }
+
+    .sobre-plataforma-img img {
+        height: 23vh;
+    }
+}
+
+@media only screen and (max-width: 150px) {
+
+    .sobre-plataforma-p{
+        width: 10px;
+    }
+
+    .sobre-plataforma-img img {
+        height: 15vh;
+    }
+
+}
+
+/* Serviços Digitais */
+.titulo-servico {
+    text-align: center;
+    font-size: 50px;
+    padding: 0 0 50px 0;
+    color: rgb(25, 121, 46);
+}
+
+.servicos {
+    padding: 100px 0;
+    font-size: 3vh;
+    background-color: white;
+    background-size: cover;
+    height: 90vh;
+    width: 90vw;
+    color: rgb(25, 121, 46);
+}
+
+.servicos-lista {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.servicos-lista div {
+    display: grid;
+    place-items: center;
+    padding: 0 0 50px;
+}
+
+.servicos-lista div p{
+    text-align: center;
+}
+
+.servicos-lista div img {
+    height: 25vh;
+}
+
+@media screen and (max-width: 1300px){
+    .servicos {
+        padding: 75px 0 120px 0;
+    }
+
+    .servicos-lista {
+        grid-template-columns: repeat(2, 1fr);
+    } 
+    .servicos-lista div img{
+        height: 15vh;   
+    }
+
+    
+}
+
+@media screen and (min-width: 0px) and (max-width: 600px) {
+    .titulo-servico {
+        text-align: center;
+        font-size: 25px;
+        padding: 20px 25px 50px 25px;
+        color: rgb(25, 121, 46);
+    }
+    
+    .servicos {
+        padding: 50px 0 800px 0;
+    }
+    
+    .servicos-lista {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 300px){
+    .servicos-lista div img {
+        height: 10vh;
+    }
+
+    .servicos-lista div p {
+        font-size: 10px;
+    }
+
+
+}
+
+/* Benefícios */
+.beneficios{
+    background-image: url(../imagens/green-paper.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.beneficios-titulo{
+    display: grid;
+    place-items: center;
+    padding: 50px 0 0 0;
+}
+
+.beneficios-titulo-img{
+    display: inline-flex;
+}
+
+.beneficios-titulo-img img{
+    height: 10vh;
+}
+
+.beneficios-titulo-img h1{
+    display: grid;
+    place-items: center;
+    color: white;
+    font-size: 8vh;
+}
+
+.beneficios-processo{
+    padding: 20px 0 0 0;
+    display: grid;
+    place-items: center;
+    color: white;
+}
+
+.planet{
+    width: 100vh;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1650px){
+    .beneficios-titulo-img h1{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1000px){
+    .beneficios{
+        margin: 200px 0 0 0;
+    }
+
+    .beneficios-titulo-img h1{
+        font-size: 25px;
+        padding: 0 10px 50px 10pxs;
+    }
+
+    .planet{
+        width: 70vh;
+    }
+
+}
+
+@media screen and (max-width: 650px){
+
+    .beneficios{
+        height: 60vh;
+    }
+
+    .planet{
+        width: 40vh;
+    }
+
+    .beneficios-titulo-img img{
+        height: 5vh;
+    }
+
+    .beneficios-titulo-img h1{
+        font-size: 15px;
+        padding: 0 10px 50px 10px;
+    }
+
+    .beneficios-processo div h2{
+        font-size: 12px;
+    }
+
+    .beneficios-processo div ul li{
+        font-size: 10px;
+    }    
+
+}
+
+@media screen and (max-width: 400px){
+    .planet{
+        width: 20vh;
+    }
+}
+
+/* Gestão dos Reciclados*/
+.reciclados section{
+    display: grid;
+    place-items: center;
+    padding: 20px 0 0 0;
+}
+
+.reciclados section img{
+    height: 75vh;
+    padding: 0 0 100px 0;
+}
+
+.reciclados-mobile{
+    display: none;
+}
+
+@media screen and (max-width: 1400px){
+    .reciclados section img{
+        height: 65vh;
+        padding: 0 0 100px 0;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .reciclados section img{
+        height: 50vh;
+        padding: 0 0 100px 0;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .reciclados section img{
+        height: 45vh;
+        padding: 0 0 100px 0;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .reciclados section img{
+        display: none;
+    }
+
+    .reciclados-mobile{
+        display: grid;
+    }
+
+    .reciclados-mobile img{
+        padding: 20px 0;
+        height: 30vh;
+    }
+}
+
+/* Parceiros */
+.parceiros-lista{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.parceiros-lista div{
+    display: grid;
+    place-items: center;
+    padding: 0 0 100px 0;
+}
+
+.parceiros-lista div img {
+    height: 25vh;
+}
+
+.parceiros-lista div p{
+    font-size: 3vh;
+    color: rgb(25, 121, 46);
+    text-align: center;
+}
+
+@media screen and (max-width: 1150px){
+
+    .parceiros-lista {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .parceiros-lista div{
+        padding: 30px;
+    } 
+    .parceiros-lista div img{
+        height: 15vh;   
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+    
+    .parceiros-lista div{
+        padding: 0 0 40px 0;
+    }
+
+    .parceiros-lista {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media screen and (min-width: 0px) and (max-width: 300px){
+    .parceiros-lista div img {
+        height: 10vh;
+    }
+
+    .parceiros-lista div p {
+        font-size: 10px;
+    }
+}
+
+/* Contato */
+.contato-divisao{
+    display: grid;
+    place-items: center;
+}
+
+.contato-divisao img{
+    height: 10vh;
+}
+
+/* Rodapé */
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    background-color: rgb(25, 121, 46);
+    background: linear-gradient(90deg, rgba(25,121,46,1) 0%, rgba(25,121,46,1) 35%, rgba(20,182,56,1) 100%);
+    /* background-image: url(../imagens/green-paper.jpg); */
+    background-size: cover;
+    border-radius: 100px 0 0 0;  
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+.links-uteis p{
+    padding: 5px;
+}
+
+.links-uteis a{
+    display: block;
+    text-decoration: none;
+    color: White;
+    transition: 0.5s;
+}
+
+.links-uteis a:hover{
+    transition: 0.5s;
+    color: rgb(92, 255, 146);
+}
+
+.footer-social{
+    padding: 10px;
+}
+
+.footer-social a img{
+    height: 5vh;
+    padding: 0 5px;
+}
+
+.footer-logo{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.footer-logo img{
+    height: 8vh;
+}
+
+
+@media screen and (max-width: 1150px){
+
+    footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer section {
+        padding: 25px;
+    }
+
+}
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+
+    footer {
+        grid-template-columns: 1fr;
+    }
+
+}

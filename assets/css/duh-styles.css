@@ -1,0 +1,129 @@
+body {
+    background-color: #FAFAFA;
+}
+
+.transparent-nav {
+    background-color: transparent;
+}
+
+.container-inicial {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Sora', sans-serif;
+}
+  
+.textos-inicio {
+    margin: 180px 120px 0 120px;
+}
+
+.textos-inicio h1 {
+    color: black;
+    font-size: 4.2rem;
+    font-weight: bold;
+}
+
+.textos-inicio h2 {
+    color: #505050;
+    font-size: 1rem;
+    margin-bottom: 50px;
+}
+
+.textos-inicio a {
+    text-decoration: none;
+    color: #FAFAFA;
+    margin-top: 100px;
+    background-color: #240E92;
+    padding: 10px 20px 10px 20px;
+    border-radius: 25px;
+}
+
+.carrousel-inicio {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    width: 45vw;
+    max-width: 100%;
+    margin: 40px auto 0;
+}
+
+.owl-carousel .item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px 1px 100px 1px;
+}
+
+.inicial-img {
+    display: grid;
+    place-items: center;
+}
+
+.triangulo {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Card Parceiros */
+.custom-card {
+    background-color: #fcfcfc;
+}
+
+.custom-who {
+    background-color: #0a58ca     !important;
+}
+
+@media (max-width: 1106px) {
+    /* Global */
+
+    .container-inicial {
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+
+    .textos-inicio {
+        display: grid;
+        place-items: center;
+        margin: 20% 10% 0 10%;
+    }
+    
+    .textos-inicio h1 {
+        font-size: 7vw;
+    }
+    
+    .textos-inicio h2 {
+        font-size: 2.5vw;
+        margin-bottom: 5vw;
+    }
+    
+    .textos-inicio a {
+        text-decoration: none;
+        color: #FAFAFA;
+        margin-top: 10vw;
+        background-color: #240E92;
+        padding: 2vw 4vw;
+        margin-bottom: 10vw;
+        border-radius: 25px;
+    }
+
+    .triangulo {
+        display: none;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    /* Estilos para dispositivos móveis */
+
+    .textos-inicio h1 {
+        font-size: 10vw;
+    }
+
+    .textos-inicio h2 {
+        font-size: 5vw;
+        margin-bottom: 5vw;
+    }
+
+    .carrousel-inicio {
+        display: none;
+    }
+
+}
