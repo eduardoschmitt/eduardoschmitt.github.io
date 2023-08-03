@@ -42,3 +42,25 @@ $(document).ready(function() {
         }
     });
 });
+
+$(document).ready(function() {
+    var owl = $('.carousel3');
+    owl.owlCarousel({
+        margin: 10,
+        loop: true,
+        lazyLoad: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 2
+            }
+        }
+    });
+});
