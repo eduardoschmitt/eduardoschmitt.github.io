@@ -100,6 +100,26 @@ body {
     text-decoration: none;
 }
 
+.btn-menu {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 12px 32px;
+    border-radius: 50px;
+    transition: 0.3s;
+    line-height: 1;
+    color: #233981;
+    animation-delay: 0.8s;
+    border: 2px solid #233981;
+  }
+  
+.btn-menu:hover {
+    background: #233981;
+    color: #fff;
+    text-decoration: none;
+}
+
+
 /* Produtos */
 .read-more {
     text-decoration: none;
@@ -117,14 +137,17 @@ body {
     transition: 1s;
 }
 
-
-/* Card Parceiros */
+/* Card Clientes */
 .custom-card {
     background-color: #FAFAFA;
 }
 
 .custom-who {
     background-color: #0a58ca     !important;
+}
+
+.custom-card h5 {
+    color: #233981 !important;
 }
 
 @media (max-width: 1106px) {
@@ -182,6 +205,15 @@ body {
 
     .carrousel-inicio {
         display: none;
+    }
+
+}
+
+/* Correção do botão no menu mobile */
+@media (max-width: 768px) {
+
+    .navbar-nav {
+        margin-bottom: 20px !important;
     }
 
 }
