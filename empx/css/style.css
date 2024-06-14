@@ -1,0 +1,461 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  height: 7.5rem;
+  width: auto;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+h1,
+h2,
+h3,
+p {
+  font-family: 'Inter', sans-serif;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.hero-section {
+  background: url('../assets/img/background.png') no-repeat center center scroll;
+  background-size: cover;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 3rem 3rem 0;
+  text-align: left;
+}
+
+.button {
+  background-color: white;
+  color: #0084ff;
+  border: none;
+  padding: 1rem 4rem;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease, box-shadow 0.6s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.button:hover {
+  color: rgb(27, 75, 179);
+  background-color: #ffffff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.principal-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  padding: 20px;
+}
+
+.grid-imagem-app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* EMPX SECTION */
+.empx-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* Duas colunas de tamanho igual */
+  gap: 20px;
+  /* Espaço entre as colunas */
+  align-items: center;
+  /* Alinha verticalmente o conteúdo no centro */
+  justify-content: center;
+  /* Centraliza horizontalmente dentro do container */
+  padding: 20px;
+  /* Espaço interno para evitar colagem nas bordas */
+}
+
+.empx-text {
+  padding: 20px;
+  /* Espaço interno para textos */
+  text-align: left;
+  /* Alinha o texto à esquerda */
+}
+
+.empx-image {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  overflow: hidden;
+  /* Garantir que o overflow não cause a barra de rolagem */
+}
+
+.empx-image img {
+  max-width: none;
+  /* Permite que a imagem ultrapasse os limites */
+  width: 120%;
+  /* Ajuste conforme necessário para a quantidade que deseja que ultrapasse */
+  height: auto;
+  position: relative;
+  top: -3rem;
+  margin-right: -10rem;
+  /* Mantém o deslocamento desejado */
+  clip-path: inset(0 10rem 0 0);
+  /* Corta a parte excedente da imagem */
+}
+
+.empx-titulo {
+  position: relative;
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.empx-titulo::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -10px;
+  /* Ajuste a posição vertical conforme necessário */
+  width: 50%;
+  height: 5px;
+  /* Altura da linha */
+  background-color: #0084ff;
+  /* Cor da linha */
+}
+
+/* Módulos Section */
+.modulos-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.modulos-titulo {
+  position: relative;
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.modulos-titulo::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -10px;
+  /* Ajuste a posição vertical conforme necessário */
+  width: 10%;
+  height: 5px;
+  /* Altura da linha */
+  background-color: #0084ff;
+  /* Cor da linha */
+}
+
+.modulos-itens {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modulo-box {
+  background-color: #0084ff;
+  width: 150pt;
+  height: 150pt;
+  border-radius: 10pt;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Sombra do mesmo azul do background UI UX*/
+  box-shadow: 8px 8px 8px rgba(0, 132, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.modulo-box img {
+  width: 100pt;
+  height: 100pt;
+}
+
+.modulo-item {
+  margin: 20px;
+}
+
+.modulo-item h2 {
+  position: relative;
+  display: inline-block;
+  color: #0084ff;
+  margin-top: 50px;
+}
+
+.modulo-item h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -10px;
+  /* Ajuste a posição vertical conforme necessário */
+  width: 50%;
+  height: 3px;
+  /* Altura da linha */
+  background-color: #0084ff;
+  /* Cor da linha */
+}
+
+/* Footer */
+footer {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  position: relative;
+}
+
+footer p {
+  margin: 0;
+  padding: 10px;
+  background-color: #0084ff;
+  color: #ffffff;
+  text-align: center;
+}
+
+.svg-footer {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  margin-bottom: -5px;
+}
+
+.footer {
+  background-color: #0084ff;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  bottom: 0;
+}
+
+.social-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.social-footer img {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
+
+/* Estilos para grandes desktops (máx. 1920px) */
+@media screen and (max-width: 1920px) {
+  /* Seus estilos aqui */
+}
+
+/* Estilos para desktops (máx. 1440px) */
+@media screen and (max-width: 1440px) {
+  /* Seus estilos aqui */
+}
+
+/* Estilos para laptops (máx. 1280px) */
+@media screen and (max-width: 1280px) {
+
+  /* Principal Section */
+  .hero-section {
+    padding-left: 1rem;
+  }
+
+  h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    font-size: 1rem;
+  }
+
+  h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 4rem;
+  }
+
+  p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+  }
+
+  .button {
+    background-color: white;
+    color: #0084ff;
+    border: none;
+    padding: 0.5rem 2.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+
+  /* EmpX Section (máx. 1280px) */
+  .empx-image {
+    display: none;
+  }
+
+  /* Módulos Section (máx. 1280px) */
+  .modulos-itens {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+}
+
+/* Estilos para tablets (máx. 1024px) */
+@media screen and (max-width: 1024px) {
+
+  /* Principal Section (máx. 1024px) */
+  h1 {
+    font-size: 2rem;
+    margin-right: 2rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+    margin-right: 6rem;
+  }
+
+  h3 {
+    margin-right: 12rem;
+  }
+
+  .principal-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: center;
+    margin-top: 10%;
+    padding: 20px;
+  }
+
+  .grid-imagem-app {
+    display: none;
+  }
+
+  /* Módulos Section (máx. 1024px) */
+  .modulos-itens {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+}
+
+/* Estilos para dispositivos móveis médios (máx. 768px) */
+@media screen and (max-width: 768px) {
+
+  /* Principal Section (máx. 768px) */
+  .logo {
+    height: 7.5rem;
+    width: auto;
+    padding: 0;
+  }
+
+  h2 {
+    font-size: 1rem;
+    margin-right: 2rem;
+  }
+
+  h3 {
+    margin-right: 2rem;
+  }
+
+  .hero-section {
+    padding-top: 100px;
+  }
+
+  /* Módulos Section (máx. 768px) */
+  .modulos-itens {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  
+
+}
+
+/* Estilos para dispositivos móveis pequenos (máx. 480px) */
+@media screen and (max-width: 480px) {
+  .logo {
+    height: 5.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 0.8rem;
+    margin-right: 1rem;
+  }
+
+  h3 {
+    margin-right: 1.5rem;
+  }
+
+  .hero-section {
+    padding-top: 35px;
+  }
+}

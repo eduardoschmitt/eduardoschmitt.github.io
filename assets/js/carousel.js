@@ -6,7 +6,7 @@ $(document).ready(function() {
         lazyLoad: true,
         items: 1,
         autoplay: true,
-        autoplayTimeout: 5000,
+        autoplayTimeout: 6000,
         responsive: {
             0: {
                 items: 1
@@ -50,7 +50,7 @@ $(document).ready(function() {
         loop: true,
         lazyLoad: true,
         autoplay: true,
-        autoplayTimeout: 5000,
+        autoplayTimeout: 20000,
         responsive: {
             0: {
                 items: 1
