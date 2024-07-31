@@ -9,7 +9,7 @@
     font-family: 'Sora', 'Istok Web', sans-serif;
 }
 
-body{
+body {
     background-color: rgb(255, 255, 255);
 }
 
@@ -27,7 +27,7 @@ body{
     place-items: center;
 }
 
-.titulo h1 { 
+.titulo h1 {
     color: white;
     font-size: 5vh;
     font-style: normal;
@@ -50,13 +50,13 @@ h2 {
     margin-bottom: 20px;
 }
 
-.botoes{
+.botoes {
     padding: 10px 0;
 }
 
 .botao-descubra {
     text-decoration: none;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     color: white;
     border-style: solid;
     border-color: var(--verde-appso);
@@ -77,7 +77,7 @@ h2 {
 }
 
 @media only screen and (max-width: 450px) {
-    .titulo h1 { 
+    .titulo h1 {
         font-size: 3vh;
         text-align: center;
     }
@@ -89,34 +89,35 @@ h2 {
 }
 
 @media only screen and (max-width: 250px) {
-    .botao-contato{
-        margin: 100px 0;
-    } 
-
-    .botao-descubra{
+    .botao-contato {
         margin: 100px 0;
     }
 
-    .titulo h1 { 
+    .botao-descubra {
+        margin: 100px 0;
+    }
+
+    .titulo h1 {
         font-size: 2vh;
-    }   
+    }
 }
 
 @media only screen and (max-width: 210px) {
-    .titulo h1 { 
+    .titulo h1 {
         font-size: 12px;
     }
 
-    .botoes{
+    .botoes {
         display: grid;
         grid-template-columns: 1fr;
         padding: 10px;
     }
-    .botao-contato{
-        margin: 10px;
-    } 
 
-    .botao-descubra{
+    .botao-contato {
+        margin: 10px;
+    }
+
+    .botao-descubra {
         margin: 10px;
     }
 }
@@ -143,7 +144,7 @@ h2 {
     padding: 0 0 30px 0;
 }
 
-.sobre-plataforma-p div{
+.sobre-plataforma-p div {
     padding: 0 0 25px 0;
 }
 
@@ -163,8 +164,8 @@ h2 {
     .sobre-plataforma-p {
         padding: 0 20px;
     }
-    
-    
+
+
     .sobre-plataforma-p {
         padding: 30px 0 0 0;
         font-size: 25px;
@@ -177,7 +178,7 @@ h2 {
     .sobre-plataforma-p div {
         padding: 0 20px;
     }
-    
+
 
     .sobre-plataforma-img {
         display: grid;
@@ -212,16 +213,16 @@ h2 {
 }
 
 @media only screen and (max-width: 350px) {
-    
+
     .sobre-plataforma {
         padding: 0;
     }
 
-    .sobre-plataforma-p p{
+    .sobre-plataforma-p p {
         font-size: 15px;
     }
 
-    .sobre-plataforma-p div{
+    .sobre-plataforma-p div {
         font-size: 15px;
     }
 
@@ -229,11 +230,11 @@ h2 {
 
 @media only screen and (max-width: 200px) {
 
-    .sobre-plataforma-p p{
+    .sobre-plataforma-p p {
         font-size: 8px;
     }
 
-    .sobre-plataforma-p div{
+    .sobre-plataforma-p div {
         font-size: 8px;
     }
 
@@ -244,7 +245,7 @@ h2 {
 
 @media only screen and (max-width: 150px) {
 
-    .sobre-plataforma-p{
+    .sobre-plataforma-p {
         width: 10px;
     }
 
@@ -257,7 +258,6 @@ h2 {
 /* Serviços Digitais */
 .titulo-servico {
     text-align: center;
-    font-size: 50px;
     padding: 0 0 50px 0;
     color: rgb(25, 121, 46);
 }
@@ -284,7 +284,7 @@ h2 {
     padding: 0 0 50px;
 }
 
-.servicos-lista div p{
+.servicos-lista div p {
     text-align: center;
 }
 
@@ -292,19 +292,20 @@ h2 {
     height: 25vh;
 }
 
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 1300px) {
     .servicos {
         padding: 75px 0 120px 0;
     }
 
     .servicos-lista {
         grid-template-columns: repeat(2, 1fr);
-    } 
-    .servicos-lista div img{
-        height: 15vh;   
     }
 
-    
+    .servicos-lista div img {
+        height: 15vh;
+    }
+
+
 }
 
 @media screen and (min-width: 0px) and (max-width: 600px) {
@@ -314,17 +315,17 @@ h2 {
         padding: 20px 25px 50px 25px;
         color: rgb(25, 121, 46);
     }
-    
+
     .servicos {
         padding: 50px 0 800px 0;
     }
-    
+
     .servicos-lista {
         grid-template-columns: 1fr;
     }
 }
 
-@media screen and (min-width: 0px) and (max-width: 300px){
+@media screen and (min-width: 0px) and (max-width: 300px) {
     .servicos-lista div img {
         height: 10vh;
     }
@@ -336,219 +337,301 @@ h2 {
 
 }
 
+/* Modulos Section */
+.modulos {
+    padding: 50px 20px;
+}
+
+.titulo-modulos {
+    text-align: center;
+    font-size: 50px;
+    padding: 0 0 50px 0;
+    color: var(--verde-appso);
+}
+
+.modulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.modulo img {
+    height: 10vh;
+    margin-bottom: 20px;
+}
+
+.modulo h3 {
+    font-size: 2.5vh;
+    color: var(--verde-appso);
+    margin-bottom: 10px;
+}
+
+.modulo p {
+    font-size: 1.8vh;
+    color: #333;
+    width: 80%;
+}
+
+@media only screen and (min-width: 600px) {
+    .modulos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .titulo-servico {
+        text-align: center;
+        font-size: 50px;
+        padding: 20px 25px 50px 25px;
+    }
+}
+
+/* Botão Saiba Mais */
+.saiba-mais-section {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.saiba-mais-btn {
+    background-color: var(--verde-appso);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1.8vh;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.saiba-mais-btn:hover {
+    background-color: #72b76b;
+}
+
 /* Benefícios */
-.beneficios{
+.beneficios {
     background-image: url(../imagens/green-paper.jpg);
     background-size: cover;
     height: 100vh;
 }
 
-.beneficios-titulo{
+.beneficios-titulo {
     display: grid;
     place-items: center;
     padding: 50px 0 0 0;
 }
 
-.beneficios-titulo-img{
+.beneficios-titulo-img {
     display: inline-flex;
 }
 
-.beneficios-titulo-img img{
+.beneficios-titulo-img img {
     height: 10vh;
 }
 
-.beneficios-titulo-img h1{
+.beneficios-titulo-img h1 {
     display: grid;
     place-items: center;
     color: white;
     font-size: 8vh;
 }
 
-.beneficios-processo{
+.beneficios-processo {
     padding: 20px 0 0 0;
     display: grid;
     place-items: center;
     color: white;
 }
 
-.planet{
+.planet {
     width: 100vh;
 }
 
-@media screen and (min-width: 0px) and (max-width: 1650px){
-    .beneficios-titulo-img h1{
+@media screen and (min-width: 0px) and (max-width: 1650px) {
+    .beneficios-titulo-img h1 {
         text-align: center;
     }
 }
 
-@media screen and (min-width: 0px) and (max-width: 1000px){
-    .beneficios{
+@media screen and (min-width: 0px) and (max-width: 1000px) {
+    .beneficios {
         margin: 200px 0 0 0;
     }
 
-    .beneficios-titulo-img h1{
+    .beneficios-titulo-img h1 {
         font-size: 25px;
         padding: 0 10px 50px 10pxs;
     }
 
-    .planet{
+    .planet {
         width: 70vh;
     }
 
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 650px) {
 
-    .beneficios{
+    .beneficios {
         height: 60vh;
     }
 
-    .planet{
+    .planet {
         width: 40vh;
     }
 
-    .beneficios-titulo-img img{
+    .beneficios-titulo-img img {
         height: 5vh;
     }
 
-    .beneficios-titulo-img h1{
+    .beneficios-titulo-img h1 {
         font-size: 15px;
         padding: 0 10px 50px 10px;
     }
 
-    .beneficios-processo div h2{
+    .beneficios-processo div h2 {
         font-size: 12px;
     }
 
-    .beneficios-processo div ul li{
+    .beneficios-processo div ul li {
         font-size: 10px;
-    }    
+    }
 
 }
 
-@media screen and (max-width: 400px){
-    .planet{
+@media screen and (max-width: 400px) {
+    .planet {
         width: 20vh;
     }
 }
 
 /* Gestão dos Reciclados*/
-.reciclados section{
+.reciclados section {
     display: grid;
     place-items: center;
     padding: 20px 0 0 0;
 }
 
-.reciclados section img{
+.reciclados section img {
     height: 75vh;
     padding: 0 0 100px 0;
 }
 
-.reciclados-mobile{
+.reciclados-mobile {
     display: none;
 }
 
-@media screen and (max-width: 1400px){
-    .reciclados section img{
+@media screen and (max-width: 1400px) {
+    .reciclados section img {
         height: 65vh;
         padding: 0 0 100px 0;
     }
 }
 
-@media screen and (max-width: 1050px){
-    .reciclados section img{
+@media screen and (max-width: 1050px) {
+    .reciclados section img {
         height: 50vh;
         padding: 0 0 100px 0;
     }
 }
 
-@media screen and (max-width: 750px){
-    .reciclados section img{
+@media screen and (max-width: 750px) {
+    .reciclados section img {
         height: 45vh;
         padding: 0 0 100px 0;
     }
 }
 
-@media screen and (max-width: 500px){
-    .reciclados section img{
+@media screen and (max-width: 500px) {
+    .reciclados section img {
         display: none;
     }
 
-    .reciclados-mobile{
+    .reciclados-mobile {
         display: grid;
     }
 
-    .reciclados-mobile img{
+    .reciclados-mobile img {
         padding: 20px 0;
         height: 30vh;
     }
 }
 
 /* Parceiros */
-.parceiros-lista{
-    display: grid;
-    place-items: center;
-    grid-template-columns: repeat(3, 1fr);
+.parceiros {
+    padding: 50px 20px;
 }
 
-.parceiros-lista div{
-    display: grid;
-    place-items: center;
-    padding: 0 0 100px 0;
-}
-
-.parceiros-lista div img {
-    height: 25vh;
-}
-
-.parceiros-lista div p{
-    font-size: 3vh;
-    color: rgb(25, 121, 46);
+.titulo-servico {
     text-align: center;
+    font-size: 2.5em;
+    color: var(--verde-appso);
+    margin-bottom: 40px;
 }
 
-@media screen and (max-width: 1150px){
+.parceiros-lista {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+}
 
+.parceiro {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.9s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding: 20px;
+}
+
+.parceiro img {
+    max-height: 150px;
+    width: auto;
+    margin-bottom: 20px;
+}
+
+.parceiro p {
+    font-size: 1.2em;
+    color: #333;
+    margin: 0;
+}
+
+@media screen and (min-width: 900px) {
     .parceiros-lista {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .parceiros-lista div{
-        padding: 30px;
-    } 
-    .parceiros-lista div img{
-        height: 15vh;   
+        grid-template-columns: repeat(5, 1fr);
     }
 }
 
-@media screen and (min-width: 0px) and (max-width: 500px) {
-    
-    .parceiros-lista div{
-        padding: 0 0 40px 0;
+@media screen and (min-width: 600px) and (max-width: 899px) {
+    .parceiros-lista {
+        grid-template-columns: repeat(3, 1fr);
     }
+}
 
+@media screen and (max-width: 599px) {
     .parceiros-lista {
         grid-template-columns: 1fr;
     }
 
-}
-
-@media screen and (min-width: 0px) and (max-width: 300px){
-    .parceiros-lista div img {
-        height: 10vh;
+    .parceiro img {
+        height: 100px;
     }
 
-    .parceiros-lista div p {
-        font-size: 10px;
+    .parceiro p {
+        font-size: 1em;
     }
 }
 
 /* Contato */
-.contato-divisao{
+.contato-divisao {
     display: grid;
     place-items: center;
 }
 
-.contato-divisao img{
+.contato-divisao img {
     height: 10vh;
 }
 
@@ -558,51 +641,51 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
     background-color: rgb(25, 121, 46);
-    background: linear-gradient(90deg, rgba(25,121,46,1) 0%, rgba(25,121,46,1) 35%, rgba(20,182,56,1) 100%);
+    background: linear-gradient(90deg, rgba(25, 121, 46, 1) 0%, rgba(25, 121, 46, 1) 35%, rgba(20, 182, 56, 1) 100%);
     /* background-image: url(../imagens/green-paper.jpg); */
     background-size: cover;
-    border-radius: 100px 0 0 0;  
+    border-radius: 100px 0 0 0;
     color: white;
     text-align: center;
     padding: 40px;
 }
 
-.links-uteis p{
+.links-uteis p {
     padding: 5px;
 }
 
-.links-uteis a{
+.links-uteis a {
     display: block;
     text-decoration: none;
     color: White;
     transition: 0.5s;
 }
 
-.links-uteis a:hover{
+.links-uteis a:hover {
     transition: 0.5s;
     color: rgb(92, 255, 146);
 }
 
-.footer-social{
+.footer-social {
     padding: 10px;
 }
 
-.footer-social a img{
+.footer-social a img {
     height: 5vh;
     padding: 0 5px;
 }
 
-.footer-logo{
+.footer-logo {
     display: grid;
     grid-template-columns: 1fr;
 }
 
-.footer-logo img{
+.footer-logo img {
     height: 8vh;
 }
 
 
-@media screen and (max-width: 1150px){
+@media screen and (max-width: 1150px) {
 
     footer {
         grid-template-columns: repeat(2, 1fr);

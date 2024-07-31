@@ -1,0 +1,179 @@
+body {
+  background-color: #ffffff;
+}
+
+/* menu alterado */
+.cabecalho a {
+  color: black;
+}
+
+.cabecalho a:hover {
+  background-color: white;
+}
+
+.menu-mobile li a {
+  display: none;
+  color: rgb(0, 0, 0); 
+}
+
+/* Hero Section */
+.hero {
+  display: grid;
+  place-items: center;
+  background-image: url('../imagens/hero-background.jpg');
+  background-size: cover;
+  color: white;
+  height: 50vh;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: -50px;
+}
+
+.hero h1 {
+  color: var(--verde-appso);
+  font-size: 4vh;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  color: var(--verde-appso);
+  font-size: 2vh;
+  width: 60%;
+}
+
+/* Modulos Section */
+.modulos {
+  padding: 50px 20px;
+
+}
+
+.modulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.modulo img {
+  height: 10vh;
+  margin-bottom: 20px;
+}
+
+.modulo h3 {
+  font-size: 2.5vh;
+  color: var(--verde-appso);
+  margin-bottom: 10px;
+}
+
+.modulo p {
+  font-size: 1.8vh;
+  color: #333;
+  width: 80%;
+}
+
+.modulo .detalhes {
+  margin-top: 20px;
+  text-align: left;
+  width: 90%;
+}
+
+.modulo .detalhes h4 {
+  font-size: 2vh;
+  color: var(--verde-appso);
+  margin-bottom: 10px;
+}
+
+.modulo .detalhes p {
+  font-size: 1.6vh;
+  color: #555;
+}
+
+@media only screen and (max-width: 599px) {
+  .hero {
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .modulos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .modulos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Contato Section */
+.contato {
+  display: grid;
+  place-items: center;
+  padding: 50px 20px;
+}
+
+.titulo-contato {
+  font-size: 3vh;
+  color: var(--verde-appso);
+  margin-bottom: 20px;
+}
+
+.contato p {
+  font-size: 2vh;
+  margin-bottom: 20px;
+}
+
+.contato a img {
+  height: 10vh;
+}
+
+/* Footer */
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  background-color: var(--verde-appso);
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+footer section {
+  padding: 20px;
+}
+
+.links-uteis a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+.links-uteis a:hover {
+  color: #aadf91;
+}
+
+.footer-social a img {
+  height: 5vh;
+  margin: 0 10px;
+}
+
+.footer-logo img {
+  height: 8vh;
+}
+
+@media only screen and (max-width: 600px) {
+  footer {
+    grid-template-columns: 1fr;
+  }
+
+  footer section {
+    padding: 10px;
+  }
+}
