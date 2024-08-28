@@ -616,6 +616,78 @@ h2 {
     }
 }
 
+/* Formiguinha */
+.premio {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.premio .titulo-servico {
+    font-size: 2.5em;
+    color: var(--verde-appso);
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.premio-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.premio-imagem img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.premio-imagem img:hover {
+    transform: scale(1.05);
+}
+
+.premio-texto {
+    max-width: 600px;
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.6;
+}
+
+.premio-texto a {
+    color: var(--verde-appso);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.premio-texto a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .premio .titulo-servico {
+        font-size: 2em;
+    }
+
+    .premio-texto {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .premio .titulo-servico {
+        font-size: 1.5em;
+    }
+
+    .premio-texto {
+        font-size: 1em;
+    }
+}
+
+
 /* Contato */
 .contato-divisao {
     display: grid;

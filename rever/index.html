@@ -1,197 +1,370 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="Content-Language" content="pt-BR" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rever</title>
-    <link rel="stylesheet" href="css/default.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon" />
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap"
+    />
     <!-- Otimização de mecanismos de pesquisa -->
     <title>Rever - Aplicativo de Gestão Ambiental.</title>
-    <meta name="description" content="O aplicativo REVER é uma plataforma de gestão ambiental que oferece recursos práticos para cidadãos e gestão pública. Acesse o aplicativo para obter dicas, fazer denúncias e ficar atualizado sobre questões ambientais." />
-    <meta name="keywords" content="Rever, aplicativo de gestão ambiental, plataforma digital, sustentabilidade, mobilidade urbana, conscientização ambiental" />
+    <meta
+      name="description"
+      content="O aplicativo REVER é uma plataforma de gestão ambiental que oferece recursos práticos para cidadãos e gestão pública. Acesse o aplicativo para obter dicas, fazer denúncias e ficar atualizado sobre questões ambientais."
+    />
+    <meta
+      name="keywords"
+      content="Rever, aplicativo de gestão ambiental, plataforma digital, sustentabilidade, mobilidade urbana, conscientização ambiental"
+    />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Eduardo Schmitt" />
-    <link rel="canonical" href="http://appsotecnologia.com.br/rever/index.html" />
-    <meta property="og:title" content="Rever - Aplicativo de Gestão Ambiental" />
-    <meta property="og:description" content="O aplicativo REVER é uma plataforma de gestão ambiental que oferece recursos práticos para cidadãos e gestão pública. Acesse o aplicativo para obter dicas, fazer denúncias e ficar atualizado sobre questões ambientais." />
+    <link
+      rel="canonical"
+      href="http://appsotecnologia.com.br/rever/index.html"
+    />
+    <meta
+      property="og:title"
+      content="Rever - Aplicativo de Gestão Ambiental"
+    />
+    <meta
+      property="og:description"
+      content="O aplicativo REVER é uma plataforma de gestão ambiental que oferece recursos práticos para cidadãos e gestão pública. Acesse o aplicativo para obter dicas, fazer denúncias e ficar atualizado sobre questões ambientais."
+    />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://appsotecnologia.com.br/rever/index.html" />
-    <meta property="og:image" content="http://appsotecnologia.com.br/rever/images/rever-logo.png" />
+    <meta
+      property="og:url"
+      content="http://appsotecnologia.com.br/rever/index.html"
+    />
+    <meta
+      property="og:image"
+      content="http://appsotecnologia.com.br/rever/images/rever-logo.png"
+    />
     <meta property="og:image:alt" content="Logo do Rever" />
     <meta property="og:site_name" content="Rever" />
     <meta name="geo.region" content="BR" />
     <meta name="geo.placename" content="Içara, SC" />
     <meta name="geo.position" content="-28.708122959900102;-49.2850063711639" />
     <meta name="ICBM" content="-28.708122959900102, -49.2850063711639" />
-    <meta name="format-detection" content="telephone=no" />    
-</head>
-<body>
+    <meta name="format-detection" content="telephone=no" />
+    <!-- Facebook Domain Verification -->
+    <meta
+      name="facebook-domain-verification"
+      content="1iurt6nkt04cdw95ij7751nlx7bo9o"
+    />
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "895354912458244");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=895354912458244&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+  </head>
+  <body>
     <header class="cabecalho">
-        <nav>
-            <div>
-                <img src="./icons/rever-logo2.png" alt="Logo do rever" />
-            </div>
-            <ul class="menu">
-                <li><a href="../index.html">Appso</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#contato">Contato</a></li>
-                <li><a href="https://revercidadao.appsotecnologia.com.br/">Rever Cidadão</a></li>
-            </ul>
-            <button class="menu-mobile-button">≡</button>
-        </nav>
-        <ul class="menu-mobile">
-            <li><a href="../index.html">Appso</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#contato">Contato</a></li>
-            <li><a href="https://revercidadao.appsotecnologia.com.br/">Rever Cidadão</a></li>
+      <nav>
+        <div>
+          <img src="./icons/rever-logo2.png" alt="Logo do rever" />
+        </div>
+        <ul class="menu">
+          <li><a href="../index.html">Appso</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li>
+            <a href="https://revercidadao.appsotecnologia.com.br/"
+              >Rever Cidadão</a
+            >
+          </li>
         </ul>
+        <button class="menu-mobile-button">≡</button>
+      </nav>
+      <ul class="menu-mobile">
+        <li><a href="../index.html">Appso</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li>
+          <a href="https://revercidadao.appsotecnologia.com.br/"
+            >Rever Cidadão</a
+          >
+        </li>
+      </ul>
     </header>
     <main>
-        <article class="apresentacao"> <!-- Introdução -->
-            <section class="titulo">
-                <h1>O FUTURO SUSTENTÁVEL</h1>
-                <h1>NA PALMA DA SUA MÃO</h1>
-                <h2>adote o Rever e impulsione sua gestão ambiental com inovação, eficiência e resultados que impressionam</h2>
-                <div class="botoes">
-                    <a class="botao-descubra" href="#sobre">Descubra</a>
-                    <a class="botao-contato" href="#contato">Contato</a>
-                </div>  
-            </section>
-        </article>
-        <article class="sobre-plataforma" id="sobre"> <!-- Sobre a plataforma -->
-            <section class="sobre-plataforma-p">
-                <p>A plataforma <strong>Rever</strong> foi criada com o intuito de unir <strong>o cidadão</strong> e <strong>o poder público</strong>, para juntos, contribuirmos com a sociedade que pertencemos.</p>
-                <p><strong>Sustentabilidade</strong>, orientações para os cidadãos, facilidades na tramitação de documentos. ajuda na mobilidade urbana e conscientização ambiental são alguns pontos que o <strong>Rever</strong> procura melhorar. por meio do seu aplicativo, que você obtém no próprio celular.</p>
-            </section>
-            <section class="sobre-plataforma-img">
-                <img src="imagens/celular-app-rever.png" alt="">
-            </section>
-        </article>
-        <article class="servicos"> <!-- Serviços Digitais para o cidadão -->
-            <section>
-                <h1 class="titulo-modulos">Serviços Digitais para o cidadão</h1>
-            </section>
-            <section class="modulos" id="modulos">
-                <div class="modulo">
-                    <img src="imagens/fiscal.png" alt="Fiscal Mobile">
-                    <h3>Fiscal Mobile</h3>
-                    <p>Facilite a fiscalização ambiental com nossa ferramenta móvel, permitindo uma gestão eficiente e em tempo real.</p>
-                </div>
-                <div class="modulo">
-                    <img src="imagens/reducao.png" alt="Redução de Papel">
-                    <h3>Redução de Papel</h3>
-                    <p>Minimize o uso de papel digitalizando documentos e processos, contribuindo para um ambiente mais sustentável.</p>
-                </div>
-                <div class="modulo">
-                    <img src="imagens/animal.png" alt="Núcleo do Bem-estar Animal">
-                    <h3>Núcleo do Bem-estar Animal</h3>
-                    <p>Promova o bem-estar animal com recursos dedicados a denúncias e gestão de cuidados.</p>
-                </div>
-                <div class="modulo">
-                    <img src="imagens/solicitacao.png" alt="Solicitações">
-                    <h3>Solicitações</h3>
-                    <p>Gerencie solicitações de cidadãos de maneira eficaz, garantindo respostas rápidas e soluções adequadas.</p>
-                </div>
-                <div class="modulo">
-                    <img src="imagens/ferramenta.png" alt="Ferramenta Personalizável">
-                    <h3>Ferramenta Personalizável</h3>
-                    <p>Adapte nossa plataforma às suas necessidades específicas com opções de personalização flexíveis.</p>
-                </div>
-                <div class="modulo">
-                    <img src="imagens/denuncia.png" alt="Denúncias">
-                    <h3>Denúncias</h3>
-                    <p>Permita que os cidadãos façam denúncias ambientais de forma simples e anônima, ajudando na preservação do meio ambiente.</p>
-                </div>
-            </section>
-            <section class="saiba-mais-section">
-                <a href="/rever/modulos.html"><button class="saiba-mais-btn">Saiba Mais Sobre nossos Módulos</button></a>
-            </section>            
-        </article>
-        <article class="reciclados"> <!-- Reciclados -->
-            <section>
-                <h1 class="titulo-servico">Gestão informatizada dos reciclados</h1>
-            </section>
-            <section>
-                <img src="imagens/reciclados-resized.png" alt="Processo de gestão informatizada de crédito dos reciclados">
-            </section>
-            <div class="reciclados-mobile">
-                <img src="imagens/gestao-reciclaveis/Mobile-1.png" alt="">
-                <img src="imagens/gestao-reciclaveis/Mobile-2.png" alt="">
-                <img src="imagens/gestao-reciclaveis/Mobile-3.png" alt="">
-                <img src="imagens/gestao-reciclaveis/Mobile-4.png" alt="">
-                <img src="imagens/gestao-reciclaveis/Mobile-5.png" alt="">
-            </div>
-        </article>
-        <article class="parceiros">
-            <section>
-                <h1 class="titulo-servico">Cidades que impulsionam com o Rever</h1>
-            </section>
-            <section class="parceiros-lista">
-                <div class="parceiro">
-                    <img src="imagens/criciuma.png" alt="Criciúma">
-                    <p>Criciúma</p>
-                </div>
-                <div class="parceiro">
-                    <img src="imagens/novaveneza-remaster.png" alt="Nova Veneza">
-                    <p>Nova Veneza</p>
-                </div>
-                <div class="parceiro">
-                    <img src="imagens/icara.png" alt="Içara">
-                    <p>Içara</p>
-                </div>
-                <div class="parceiro">
-                    <img src="imagens/morrofumaca.png" alt="Morro da Fumaça">
-                    <p>Morro da Fumaça</p>
-                </div>
-                <div class="parceiro">
-                    <img src="imagens/lauro.png" alt="Lauro Muller">
-                    <p>Lauro Muller</p>
-                </div>
-            </section>
-        </article>
-        
-        <article class="contato"> <!-- Contato -->
-            <section>
-                <h1 class="titulo-servico">Fale conosco no WhatsApp</h1>
-            </section>
-            <section class="contato-divisao" id="contato">
-                    <a href="https://wa.me/+5548988145971" target="_blank"><img src="icons/botao-whatsapp.png" alt="Botão WhatsApp"></a>
-            </section>
-        </article>
-    </main>
-    <footer>
-        <!-- <p>© 2022 Appso Tecnologia. Todos os direitos reservados</p> --> 
-        <section class="links-uteis">
-            <p>Links Úteis</p>
-            <a href="http://appsotecnologia.com.br/" target="_blank">Appso</a>
-            <a href="https://revercidadao.appsotecnologia.com.br/" target="_blank">Rever Cidadão</a>
-            <a href="https://rever.appsotecnologia.com.br/" target="_blank">Rever Web</a>
-            <a href="https://play.google.com/store/apps/details?id=br.com.appsotecnologia.appsoapp&hl=pt_BR&gl=US" target="_blank">Rever Mobile</a>
+      <article class="apresentacao">
+        <!-- Introdução -->
+        <section class="titulo">
+          <h1>O FUTURO SUSTENTÁVEL</h1>
+          <h1>NA PALMA DA SUA MÃO</h1>
+          <h2>
+            adote o Rever e impulsione sua gestão ambiental com inovação,
+            eficiência e resultados que impressionam
+          </h2>
+          <div class="botoes">
+            <a class="botao-descubra" href="#sobre">Descubra</a>
+            <a class="botao-contato" href="#contato">Contato</a>
+          </div>
+        </section>
+      </article>
+      <article class="sobre-plataforma" id="sobre">
+        <!-- Sobre a plataforma -->
+        <section class="sobre-plataforma-p">
+          <p>
+            A plataforma <strong>Rever</strong> foi criada com o intuito de unir
+            <strong>o cidadão</strong> e <strong>o poder público</strong>, para
+            juntos, contribuirmos com a sociedade que pertencemos.
+          </p>
+          <p>
+            <strong>Sustentabilidade</strong>, orientações para os cidadãos,
+            facilidades na tramitação de documentos. ajuda na mobilidade urbana
+            e conscientização ambiental são alguns pontos que o
+            <strong>Rever</strong> procura melhorar. por meio do seu aplicativo,
+            que você obtém no próprio celular.
+          </p>
+        </section>
+        <section class="sobre-plataforma-img">
+          <img src="imagens/celular-app-rever.png" alt="" />
+        </section>
+      </article>
+      <article class="servicos">
+        <!-- Serviços Digitais para o cidadão -->
+        <section>
+          <h1 class="titulo-modulos">Serviços Digitais para o cidadão</h1>
+        </section>
+        <section class="modulos" id="modulos">
+          <div class="modulo">
+            <img src="imagens/fiscal.png" alt="Fiscal Mobile" />
+            <h3>Fiscal Mobile</h3>
+            <p>
+              Facilite a fiscalização ambiental com nossa ferramenta móvel,
+              permitindo uma gestão eficiente e em tempo real.
+            </p>
+          </div>
+          <div class="modulo">
+            <img src="imagens/reducao.png" alt="Redução de Papel" />
+            <h3>Redução de Papel</h3>
+            <p>
+              Minimize o uso de papel digitalizando documentos e processos,
+              contribuindo para um ambiente mais sustentável.
+            </p>
+          </div>
+          <div class="modulo">
+            <img src="imagens/animal.png" alt="Núcleo do Bem-estar Animal" />
+            <h3>Núcleo do Bem-estar Animal</h3>
+            <p>
+              Promova o bem-estar animal com recursos dedicados a denúncias e
+              gestão de cuidados.
+            </p>
+          </div>
+          <div class="modulo">
+            <img src="imagens/solicitacao.png" alt="Solicitações" />
+            <h3>Solicitações</h3>
+            <p>
+              Gerencie solicitações de cidadãos de maneira eficaz, garantindo
+              respostas rápidas e soluções adequadas.
+            </p>
+          </div>
+          <div class="modulo">
+            <img src="imagens/ferramenta.png" alt="Ferramenta Personalizável" />
+            <h3>Ferramenta Personalizável</h3>
+            <p>
+              Adapte nossa plataforma às suas necessidades específicas com
+              opções de personalização flexíveis.
+            </p>
+          </div>
+          <div class="modulo">
+            <img src="imagens/denuncia.png" alt="Denúncias" />
+            <h3>Denúncias</h3>
+            <p>
+              Permita que os cidadãos façam denúncias ambientais de forma
+              simples e anônima, ajudando na preservação do meio ambiente.
+            </p>
+          </div>
+        </section>
+        <section class="saiba-mais-section">
+          <a href="/rever/modulos.html"
+            ><button class="saiba-mais-btn">
+              Saiba Mais Sobre nossos Módulos
+            </button></a
+          >
+        </section>
+      </article>
+      <article class="reciclados">
+        <!-- Reciclados -->
+        <section>
+          <h1 class="titulo-servico">Gestão informatizada dos reciclados</h1>
         </section>
         <section>
-            <p>Contato</p>
-            <p>Rua Emília Tibério Joaquim, 311 Bairro Tereza Cristina, Içara (SC)</p>
-            <p>(48) 3432-0790</p>
-            <section class="footer-social">
-                <a href="https://wa.me/+5548988145971" target="_blank"><img src="icons/whatsapp-480.png" alt="WhatsApp"></a>
-                <a href="https://www.facebook.com/appsotecnologia" target="_blank"><img src="icons/facebook-480.png" alt="Facebook"></a>
-                <a href="https://br.linkedin.com/company/appso-tecnologia-ltda" target="_blank"><img src="icons/linkedin-480.png" alt="Linkedin"></a>
-            </section>     
+          <img
+            src="imagens/reciclados-resized.png"
+            alt="Processo de gestão informatizada de crédito dos reciclados"
+          />
         </section>
-        <section class="footer-logo">
-            <img src="icons/rever-logo-white.png" alt="Rever Logo">
-            <img src="icons/appso-white.png" alt="Appso Tecnologia Logo">
+        <div class="reciclados-mobile">
+          <img src="imagens/gestao-reciclaveis/Mobile-1.png" alt="" />
+          <img src="imagens/gestao-reciclaveis/Mobile-2.png" alt="" />
+          <img src="imagens/gestao-reciclaveis/Mobile-3.png" alt="" />
+          <img src="imagens/gestao-reciclaveis/Mobile-4.png" alt="" />
+          <img src="imagens/gestao-reciclaveis/Mobile-5.png" alt="" />
+        </div>
+      </article>
+
+      <article class="parceiros">
+        <section>
+          <h1 class="titulo-servico">Cidades que impulsionam com o Rever</h1>
         </section>
+        <section class="parceiros-lista">
+          <div class="parceiro">
+            <img src="imagens/criciuma.png" alt="Criciúma" />
+            <p>Criciúma</p>
+          </div>
+          <div class="parceiro">
+            <img src="imagens/novaveneza-remaster.png" alt="Nova Veneza" />
+            <p>Nova Veneza</p>
+          </div>
+          <div class="parceiro">
+            <img src="imagens/icara.png" alt="Içara" />
+            <p>Içara</p>
+          </div>
+          <div class="parceiro">
+            <img src="imagens/morrofumaca.png" alt="Morro da Fumaça" />
+            <p>Morro da Fumaça</p>
+          </div>
+          <div class="parceiro">
+            <img src="imagens/lauro.png" alt="Lauro Muller" />
+            <p>Lauro Muller</p>
+          </div>
+        </section>
+      </article>
+
+      <article class="premio">
+        <section class="premio-header">
+          <h1 class="titulo-servico">Troféu Formiguinha</h1>
+        </section>
+        <section class="premio-conteudo">
+          <div class="premio-imagem">
+            <img
+              src="imagens/trofeu-formiguinha.png"
+              alt="Troféu Formiguinha"
+            />
+          </div>
+          <div class="premio-texto">
+            <p>
+              É com grande orgulho que anunciamos que o
+              <strong>Rever</strong> foi premiado com o
+              <strong>Troféu Formiguinha</strong> pelo nosso compromisso e
+              inovação em sustentabilidade. Esse reconhecimento, concedido pelo
+              <a
+                href="https://www.instagram.com/imasantacatarina"
+                target="_blank"
+                >@imasantacatarina</a
+              >
+              e pela
+              <a href="https://www.instagram.com/fundave.nv" target="_blank"
+                >@fundave.nv</a
+              >, destaca nossa dedicação em proporcionar soluções tecnológicas
+              que fazem a diferença no meio ambiente. Continuamos firmes em
+              nossa missão de promover práticas sustentáveis e eficientes.
+            </p>
+          </div>
+        </section>
+      </article>
+
+      <article class="contato">
+        <!-- Contato -->
+        <section>
+          <h1 class="titulo-servico">Fale conosco no WhatsApp</h1>
+        </section>
+        <section class="contato-divisao" id="contato">
+          <a href="obrigado.html" target="_blank"
+            ><img src="icons/botao-whatsapp.png" alt="Botão WhatsApp"
+          /></a>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <!-- <p>© 2022 Appso Tecnologia. Todos os direitos reservados</p> -->
+      <section class="links-uteis">
+        <p>Links Úteis</p>
+        <a href="http://appsotecnologia.com.br/" target="_blank">Appso</a>
+        <a href="https://revercidadao.appsotecnologia.com.br/" target="_blank"
+          >Rever Cidadão</a
+        >
+        <a href="https://rever.appsotecnologia.com.br/" target="_blank"
+          >Rever Web</a
+        >
+        <a
+          href="https://play.google.com/store/apps/details?id=br.com.appsotecnologia.appsoapp&hl=pt_BR&gl=US"
+          target="_blank"
+          >Rever Mobile</a
+        >
+      </section>
+      <section>
+        <p>Contato</p>
+        <p>
+          Rua Emília Tibério Joaquim, 311 Bairro Tereza Cristina, Içara (SC)
+        </p>
+        <p>(48) 3432-0790</p>
+        <section class="footer-social">
+          <a href="https://wa.me/+5548988145971" target="_blank"
+            ><img src="icons/whatsapp-480.png" alt="WhatsApp"
+          /></a>
+          <a href="https://www.facebook.com/appsotecnologia" target="_blank"
+            ><img src="icons/facebook-480.png" alt="Facebook"
+          /></a>
+          <a
+            href="https://br.linkedin.com/company/appso-tecnologia-ltda"
+            target="_blank"
+            ><img src="icons/linkedin-480.png" alt="Linkedin"
+          /></a>
+        </section>
+      </section>
+      <section class="footer-logo">
+        <img src="icons/rever-logo-white.png" alt="Rever Logo" />
+        <img src="icons/appso-white.png" alt="Appso Tecnologia Logo" />
+      </section>
     </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

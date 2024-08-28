@@ -88,8 +88,52 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
     />
-  </head>
 
+    <!-- Facebook Domain Verification -->
+    <meta
+      name="facebook-domain-verification"
+      content="1iurt6nkt04cdw95ij7751nlx7bo9o"
+    />
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "895354912458244");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=895354912458244&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+  </head>
+  
   <body>
     <nav class="navbar navbar-light navbar-expand-md py-3 transparent-nav">
       <div class="container">
@@ -141,7 +185,7 @@
           <a
             class="btn-menu"
             role="button"
-            href="https://wa.me/+5548988145971"
+            href="contato.html"
             target="_blank"
             >Contato</a
           >
@@ -158,7 +202,8 @@
         </h2>
         <a
           class="btn-geral"
-          href="https://api.whatsapp.com/send/?phone=%2B5548988145971&text&type=phone_number&app_absent=0"
+          href="obrigado.html"
+          target="_blank"
           ><i class="fa fa-phone" style="margin-right: 10px"></i>Entrar em
           Contato</a
         >
@@ -166,7 +211,10 @@
       <div class="carrousel-inicio">
         <div class="owl-carousel owl-lazy carousel1">
           <div class="item">
-            <img src="assets/img/carroussel/auditoria.png" alt="Empx - Auditoria Digital" />
+            <img
+              src="assets/img/carroussel/auditoria.png"
+              alt="Empx - Auditoria Digital"
+            />
           </div>
           <div class="item">
             <img
@@ -175,7 +223,10 @@
             />
           </div>
           <div class="item">
-            <img src="assets/img/carroussel/novo-empx.png" alt="EmpX - Aplicativo Empresarial" />
+            <img
+              src="assets/img/carroussel/novo-empx.png"
+              alt="EmpX - Aplicativo Empresarial"
+            />
           </div>
           <div class="item">
             <img
@@ -600,9 +651,7 @@
                   style="width: 170px; height: 170px"
                   src="assets/img/Parceiros/viscoh.png"
                 />
-                <h5 class="fw-bold text-primary card-title mb-0">
-                  Viscoh
-                </h5>
+                <h5 class="fw-bold text-primary card-title mb-0">Viscoh</h5>
                 <p class="text-muted card-text mb-2">EMPX</p>
               </div>
             </div>
@@ -687,7 +736,6 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -830,7 +878,7 @@
 
     <!-- Botão WhatsApp Flutuante -->
     <a
-      href="https://wa.me/+5548988145971"
+      href="whatsapp.html"
       style="
         position: fixed;
         width: 60px;

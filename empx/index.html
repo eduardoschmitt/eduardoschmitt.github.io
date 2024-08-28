@@ -63,7 +63,49 @@
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
     />
     <title>EmpX - Revolucione a Gestão Empresarial</title>
-    <style></style>
+
+    <!-- Facebook Domain Verification -->
+    <meta
+      name="facebook-domain-verification"
+      content="1iurt6nkt04cdw95ij7751nlx7bo9o"
+    />
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "895354912458244");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=895354912458244&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
   </head>
   <body>
     <header class="hero-section">
@@ -82,7 +124,7 @@
             empresarial e desbloqueie o potencial completo da sua organização
             com EmpX.
           </h3>
-          <a href="https://wa.me/+5548988145971" target="_blank" class="button"
+          <a href="contato.html" target="_blank" class="button"
             >Entre em Contato</a
           >
         </div>
@@ -95,77 +137,83 @@
     <main>
       <!-- O que é o EMPX? -->
       <section class="empx-section">
-        <div class="empx-text">
-          <h1 class="empx-titulo">Criado Unicamente para Você</h1>
-          <p>
-            Cada empresa tem sua própria identidade, suas próprias necessidades.
-            É por isso que na EmpX, não acreditamos em soluções 'prontas'. Aqui,
-            cada aspecto da nossa plataforma é meticulosamente moldado para se
-            alinhar com a singularidade do seu negócio.
-          </p>
-          <p>
-            Personalizamos cada detalhe para harmonizar com seus processos,
-            cultura e objetivos.
-          </p>
-          <p>
-            EmpX não é apenas uma ferramenta, é o reflexo da sua visão de
-            empresa adaptado, otimizado, e exclusivamente seu. E o melhor de
-            tudo, é uma <strong>solução em nuvem</strong>, acessível de qualquer lugar, a
-            qualquer hora.
-          </p>
-        </div>
-        <div class="empx-image">
-          <img src="assets/img/bird.png" alt="Ilustração EmpX" />
+        <div class="empx-content">
+          <div class="empx-text">
+            <h1 class="empx-titulo">Criado Unicamente para Você</h1>
+            <p>
+              Cada empresa tem sua própria identidade, suas próprias
+              necessidades. Na EmpX, não acreditamos em soluções 'prontas'. Cada
+              aspecto da nossa plataforma é meticulosamente moldado para
+              alinhar-se com a singularidade do seu negócio.
+            </p>
+            <p>
+              Personalizamos cada detalhe para harmonizar com seus processos,
+              cultura e objetivos, garantindo que nossa solução seja um
+              verdadeiro reflexo da sua visão de empresa.
+            </p>
+            <p>
+              O EmpX não é apenas uma ferramenta; é o reflexo da sua visão,
+              adaptado, otimizado, e exclusivamente seu. O melhor de tudo é que
+              é uma <strong>solução em nuvem</strong>, acessível de qualquer
+              lugar, a qualquer hora.
+            </p>
+          </div>
+          <div class="empx-image">
+            <img src="assets/img/bird.png" alt="Ilustração EmpX" />
+          </div>
         </div>
       </section>
-      <!-- Dashboards -->
-      <section class="empx-section">
-        <div class="dashborad-image">
-          <img
-            class="dashboard-img"
-            src="assets/img/dashboard.png"
-            alt="Ilustração EmpX"
-          />
-        </div>
-        <div class="empx-text">
-          <h1 class="empx-titulo">Dashboards Inteligentes</h1>
-          <p class="dashboard-p">
-            Transforme dados em ações inteligentes com nossos
-            <strong>Dashboards com Indicadores Inteligentes</strong>, criados
-            para se ajustar perfeitamente ao seu negócio. Veja suas principais
-            métricas atualizadas constantemente e melhore seu desempenho, tudo
-            isso por meio de uma interface clara e fácil de usar.
-          </p>
-          <p>
-            Eleve sua gestão a novos patamares — agende uma demonstração hoje!
-          </p>
-          <a
-            href="https://wa.me/+5548988145971"
-            target="_blank"
-            class="dashboard-button"
-            >Entre em Contato</a
-          >
+      <!-- Dashboards Inteligentes -->
+      <section class="dashboard-section">
+        <div class="dashboard-content">
+          <div class="dashboard-image">
+            <img
+              class="dashboard-img"
+              src="assets/img/dashboard.png"
+              alt="Ilustração EmpX"
+            />
+          </div>
+          <div class="dashboard-text">
+            <h1 class="dashboard-title">Dashboards Inteligentes</h1>
+            <p class="dashboard-p">
+              Transforme dados em ações inteligentes com nossos
+              <strong>Dashboards com Indicadores Inteligentes</strong>, criados
+              para se ajustar perfeitamente ao seu negócio. Veja suas principais
+              métricas atualizadas constantemente e melhore seu desempenho, tudo
+              isso por meio de uma interface clara e fácil de usar.
+            </p>
+            <p>
+              Eleve sua gestão a novos patamares — agende uma demonstração hoje!
+            </p>
+            <a
+              href="dashboards.html"
+              target="_blank"
+              class="dashboard-button"
+              >Entre em Contato</a
+            >
+          </div>
         </div>
       </section>
       <!-- Módulos -->
       <section class="modulos-section">
         <h1 class="modulos-titulo">Conheça nossos Módulos</h1>
-        <p>Conheça os módulos que vão revolucionar a gestão da sua empresa.</p>
-        <!-- Item 1 -->
+        <p class="modulos-subtitulo">
+          Descubra como cada módulo pode revolucionar a gestão da sua empresa.
+        </p>
         <div class="modulos-itens">
+          <!-- Item 1 -->
           <div class="modulo-item">
             <div class="modulo-box">
               <img
                 src="assets/img/modulos/lupa-white.png"
-                alt="Módulo Qualidade"
+                alt="Módulo Auditoria"
               />
             </div>
             <h2>Auditoria</h2>
             <p>
-              O módulo de Auditoria do Empx permite a definição de requisitos
-              por setor, facilitando a verificação por parte dos responsáveis.
-              Acompanhamento visual através de gráficos mostra o andamento das
-              auditorias, promovendo transparência e eficiência na gestão.
+              Defina requisitos por setor, facilite verificações e acompanhe
+              auditorias com gráficos claros, promovendo transparência e
+              eficiência.
             </p>
           </div>
           <!-- Item 2 -->
@@ -173,16 +221,14 @@
             <div class="modulo-box">
               <img
                 src="assets/img/modulos/Suprimentos-white.png"
-                alt="Módulo Financeiro"
+                alt="Módulo Suprimentos"
               />
             </div>
             <h2>Suprimentos</h2>
             <p>
-              O módulo de Suprimentos gerencia todas as atividades relacionadas
-              a depósitos. Inclui o cadastro de transações para movimentações
-              internas, emissão de notas fiscais de entrada, transferências de
-              estoque entre depósitos internos, ajustes e consultas de estoque,
-              e monitoramento de movimentos de estoque.
+              Gerencie depósitos, transações e estoque com eficiência, incluindo
+              emissão de notas fiscais e monitoramento detalhado de
+              movimentações.
             </p>
           </div>
           <!-- Item 3 -->
@@ -190,65 +236,56 @@
             <div class="modulo-box">
               <img
                 src="assets/img/modulos/relogio-white.png"
-                alt="Módulo Financeiro"
+                alt="Módulo Gestão de Atividades"
               />
             </div>
             <h2>Gestão de Atividades</h2>
             <p>
-              Este módulo permite o apontamento de horas trabalhadas, tanto via
-              web quanto aplicativo, com a capacidade de especificar para qual
-              empresa as horas foram dedicadas. Além disso, facilita a emissão
-              de relatórios detalhados, auxiliando no acompanhamento e análise
-              das atividades.
+              Aponte horas trabalhadas e emita relatórios detalhados para
+              acompanhar e analisar atividades com precisão e eficiência.
             </p>
           </div>
-          <!-- Item 4 - Gestão de Frotas -->
+          <!-- Item 4 -->
           <div class="modulo-item">
             <div class="modulo-box">
               <img
                 src="assets/img/modulos/caminhao-white.png"
-                alt="Módulo Financeiro"
+                alt="Módulo Gestão de Frotas"
               />
             </div>
             <h2>Gestão de Frotas</h2>
             <p>
-              Este módulo permite o apontamento de horas trabalhadas, tanto via
-              web quanto aplicativo, com a capacidade de especificar para qual
-              empresa as horas foram dedicadas. Além disso, facilita a emissão
-              de relatórios detalhados, auxiliando no acompanhamento e análise
-              das atividades.
+              Controle a frota da sua empresa com monitoramento em tempo real,
+              gestão de manutenções e rastreabilidade segura.
             </p>
           </div>
-          <!-- Item 5 - Produção -->
+          <!-- Item 5 -->
           <div class="modulo-item">
             <div class="modulo-box">
               <img
                 src="assets/img/modulos/fabrica-white.png"
-                alt="Módulo Financeiro"
+                alt="Módulo Produção"
               />
             </div>
             <h2>Produção</h2>
             <p>
-              O módulo de Produção oferece controle completo sobre ordens de
-              produção, estágios, roteiros e pedidos. Permite a geração de
-              ordens de produção (OP) e facilita os apontamentos necessários,
-              garantindo uma gestão eficaz e integrada da produção.
+              Controle ordens de produção, estágios e roteiros, garantindo uma
+              gestão eficaz e integrada da produção.
             </p>
           </div>
-          <!-- Item 6 - Qualidade -->
+          <!-- Item 6 -->
           <div class="modulo-item">
             <div class="modulo-box">
               <img
                 src="assets/img/modulos/qualidade-white.png"
-                alt="Módulo Financeiro"
+                alt="Módulo Qualidade"
               />
             </div>
             <h2>Qualidade</h2>
             <p>
-              O módulo de Qualidade do EmpX permite a definição de requisitos
-              por setor, facilitando a verificação por parte dos responsáveis.
-              Acompanhamento visual através de gráficos mostra o andamento das
-              auditor
+              Garanta a qualidade dos produtos com testes, inspeções e
+              relatórios otimizados para monitorar e acompanhar todas as
+              situações.
             </p>
           </div>
         </div>
@@ -257,7 +294,7 @@
 
     <!-- Botão WhatsApp Flutuante -->
     <a
-      href="https://wa.me/+5548988145971"
+      href="whatsapp.html"
       style="
         position: fixed;
         width: 60px;
