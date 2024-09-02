@@ -47,6 +47,49 @@
     />
     <meta property="og:image:alt" content="Logo do Rever" />
     <meta property="og:site_name" content="Rever" />
+
+    <!-- Facebook Domain Verification -->
+    <meta
+      name="facebook-domain-verification"
+      content="1iurt6nkt04cdw95ij7751nlx7bo9o"
+    />
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "1853413115186727");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1853413115186727&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
   </head>
   <body>
     <header class="cabecalho">
@@ -269,8 +312,10 @@
         /></a>
       </section>
       <section class="saiba-mais-section">
-        <a href="/rever/index.html"><button class="saiba-mais-btn">Voltar</button></a>
-    </section>  
+        <a href="/rever/index.html"
+          ><button class="saiba-mais-btn">Voltar</button></a
+        >
+      </section>
     </main>
     <footer>
       <section class="links-uteis">
