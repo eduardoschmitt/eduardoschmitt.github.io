@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css?v=1.0.1" />
+    <link rel="stylesheet" href="css/popup.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -70,6 +71,19 @@
       content="1iurt6nkt04cdw95ij7751nlx7bo9o"
     />
 
+    <!-- Owl Stylesheets -->
+    <link
+      rel="stylesheet"
+      href="../assets/owlcarousel/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/owlcarousel/assets/owl.theme.default.min.css"
+    />
+    <!-- Owl javascript -->
+    <script src="../assets/vendors/jquery.min.js"></script>
+    <script src="../assets/owlcarousel/owl.carousel.js"></script>
+
     <!-- Meta Pixel Code -->
     <script>
       !(function (f, b, e, v, n, t, s) {
@@ -114,17 +128,18 @@
       </nav>
       <div class="principal-grid">
         <div class="principal-text">
-          <h2>Seja bem-vindo ao Futuro da Gestão Empresarial.</h2>
-          <h1>
-            Revolucione a performance do seu negócio com inteligência e inovação
-          </h1>
+          <h2>Bem-vindo ao Futuro da Gestão Empresarial.</h2>
+          <h1>Módulos que se adaptam ao seu negócio e ao seu bolso</h1>
           <h3>
-            Na EmpX, fornecemos soluções dinâmicas e avançadas para transformar
-            o ecossistema empresarial. Junte-se à vanguarda da eficiência
-            empresarial e desbloqueie o potencial completo da sua organização
-            com EmpX.
+            Nossa plataforma oferece módulos flexíveis para você montar a
+            solução ideal. Tudo se encaixa perfeitamente ao seu jeito de
+            trabalhar. Entre em contato com a gente! Queremos ouvir você e
+            ajudar a criar a melhor solução para o seu negócio.
           </h3>
-          <h4>Na EmpX, ajudamos sua empresa a crescer com soluções inteligentes. Simplifique e evolua com a gente.</h4>
+          <h4>
+            Monte sua solução ideal com módulos flexíveis. Fale com a gente e
+            personalize o EmpX para o seu negócio!
+          </h4>
           <a href="contato.html" target="_blank" class="button"
             >Entre em Contato</a
           >
@@ -136,27 +151,70 @@
     </header>
     <!-- Restante do Conteúdo do Site -->
     <main>
+      <!-- Seção de Clientes -->
+      <section class="clientes-section">
+        <h1 class="clientes-title">Nossos Clientes</h1>
+        <p class="clientes-subtitle">Empresas que confiam no EmpX</p>
+        <div class="owl-carousel owl-theme">
+          <div class="cliente-item">
+            <img
+              src="../assets/img/Parceiros/realengo.png"
+              alt="Logo Cliente 1"
+            />
+            <h3>Realengo Alimentos</h3>
+          </div>
+          <div class="cliente-item">
+            <img
+              src="../assets/img/Parceiros/viscoh.png"
+              alt="Logo Cliente 2"
+            />
+            <h3>Viscoh</h3>
+          </div>
+          <div class="cliente-item">
+            <img
+              src="../assets/img/Parceiros/projeto-tsa.png"
+              alt="Logo Cliente 3"
+            />
+            <h3>TSA Química</h3>
+          </div>
+          <div class="cliente-item">
+            <img
+              src="../assets/img/Parceiros/unnicola.png"
+              alt="Logo Cliente 4"
+            />
+            <h3>Unnicola</h3>
+          </div>
+          <div class="cliente-item">
+            <img
+              src="../assets/img/Parceiros/bombeiros.png"
+              alt="Logo Cliente 5"
+            />
+            <h3>Corpo de Bombeiros (Içara)</h3>
+          </div>
+        </div>
+      </section>
+
       <!-- O que é o EMPX? -->
       <section class="empx-section">
         <div class="empx-content">
           <div class="empx-text">
-            <h1 class="empx-titulo">Criado Unicamente para Você</h1>
+            <h1 class="empx-titulo">Feito Sob Medida para o Seu Negócio</h1>
             <p>
-              Cada empresa tem sua própria identidade, suas próprias
-              necessidades. Na EmpX, não acreditamos em soluções 'prontas'. Cada
-              aspecto da nossa plataforma é meticulosamente moldado para
-              alinhar-se com a singularidade do seu negócio.
+              Cada empresa é única, e na EmpX, acreditamos que suas soluções
+              também devem ser. Não oferecemos pacotes prontos — nossa
+              plataforma é moldada para refletir a individualidade do seu
+              negócio.
             </p>
             <p>
-              Personalizamos cada detalhe para harmonizar com seus processos,
-              cultura e objetivos, garantindo que nossa solução seja um
-              verdadeiro reflexo da sua visão de empresa.
+              Cada detalhe é personalizado para se ajustar perfeitamente aos
+              seus processos, cultura e objetivos, criando uma solução que
+              realmente incorpora a sua visão.
             </p>
             <p>
-              O EmpX não é apenas uma ferramenta; é o reflexo da sua visão,
-              adaptado, otimizado, e exclusivamente seu. O melhor de tudo é que
-              é uma <strong>solução em nuvem</strong>, acessível de qualquer
-              lugar, a qualquer hora.
+              O EmpX vai além de ser uma simples ferramenta — ele é a extensão
+              da sua estratégia, adaptado, otimizado e feito exclusivamente para
+              você. E o melhor: está sempre disponível, em qualquer lugar, a
+              qualquer hora, graças à nossa <strong>solução em nuvem</strong>.
             </p>
           </div>
           <div class="empx-image">
@@ -164,6 +222,7 @@
           </div>
         </div>
       </section>
+
       <!-- Dashboards Inteligentes -->
       <section class="dashboard-section">
         <div class="dashboard-content">
@@ -192,11 +251,12 @@
           </div>
         </div>
       </section>
-      <!-- Módulos -->
+      <!-- Módulos em Grid -->
       <section class="modulos-section">
         <h1 class="modulos-titulo">Conheça nossos Módulos</h1>
         <p class="modulos-subtitulo">
-          Descubra como cada módulo pode revolucionar a gestão da sua empresa.
+          Personalize seu pacote com os módulos essenciais para maximizar a
+          eficiência da sua empresa.
         </p>
         <div class="modulos-itens">
           <!-- Item 1 -->
@@ -207,7 +267,7 @@
                 alt="Módulo Auditoria"
               />
             </div>
-            <h2>Auditoria</h2>
+            <h2 class="modulo-item-h2">Auditoria</h2>
             <p>
               Defina requisitos por setor, facilite verificações e acompanhe
               auditorias com gráficos claros, promovendo transparência e
@@ -222,11 +282,10 @@
                 alt="Módulo Suprimentos"
               />
             </div>
-            <h2>Suprimentos</h2>
+            <h2 class="modulo-item-h2">Suprimentos</h2>
             <p>
               Gerencie depósitos, transações e estoque com eficiência, incluindo
-              emissão de notas fiscais e monitoramento detalhado de
-              movimentações.
+              monitoramento detalhado de movimentações.
             </p>
           </div>
           <!-- Item 3 -->
@@ -237,7 +296,7 @@
                 alt="Módulo Gestão de Atividades"
               />
             </div>
-            <h2>Gestão de Atividades</h2>
+            <h2 class="modulo-item-h2">Gestão de Atividades</h2>
             <p>
               Aponte horas trabalhadas e emita relatórios detalhados para
               acompanhar e analisar atividades com precisão e eficiência.
@@ -251,7 +310,7 @@
                 alt="Módulo Gestão de Frotas"
               />
             </div>
-            <h2>Gestão de Frotas</h2>
+            <h2 class="modulo-item-h2">Gestão de Frotas</h2>
             <p>
               Controle a frota da sua empresa com monitoramento em tempo real,
               gestão de manutenções e rastreabilidade segura.
@@ -265,7 +324,7 @@
                 alt="Módulo Produção"
               />
             </div>
-            <h2>Produção</h2>
+            <h2 class="modulo-item-h2">Produção</h2>
             <p>
               Controle ordens de produção, estágios e roteiros, garantindo uma
               gestão eficaz e integrada da produção.
@@ -279,7 +338,7 @@
                 alt="Módulo Qualidade"
               />
             </div>
-            <h2>Qualidade</h2>
+            <h2 class="modulo-item-h2">Qualidade</h2>
             <p>
               Garanta a qualidade dos produtos com testes, inspeções e
               relatórios otimizados para monitorar e acompanhar todas as
@@ -288,7 +347,156 @@
           </div>
         </div>
       </section>
+
+      <!-- Módulos em Carrossel (oculto por padrão) -->
+      <section class="custom-modulos-carousel-section">
+        <h1 class="custom-modulos-titulo">Conheça nossos Módulos</h1>
+        <p class="custom-modulos-subtitulo">
+          Descubra como cada módulo pode revolucionar a gestão da sua empresa.
+        </p>
+        <div class="custom-carousel owl-carousel">
+          <!-- Item 1 -->
+          <div class="custom-modulo-item">
+            <div class="custom-modulo-box">
+              <img
+                src="assets/img/modulos/lupa-white.png"
+                alt="Módulo Auditoria"
+              />
+            </div>
+            <h2 class="custom-modulo-item-h2">Auditoria</h2>
+            <p>
+              Defina requisitos por setor, facilite verificações e acompanhe
+              auditorias com gráficos claros, promovendo transparência e
+              eficiência.
+            </p>
+          </div>
+          <!-- Item 2 -->
+          <div class="custom-modulo-item">
+            <div class="custom-modulo-box">
+              <img
+                src="assets/img/modulos/Suprimentos-white.png"
+                alt="Módulo Suprimentos"
+              />
+            </div>
+            <h2 class="custom-modulo-item-h2">Suprimentos</h2>
+            <p>
+              Gerencie depósitos, transações e estoque com eficiência, incluindo
+              o monitoramento detalhado de
+              movimentações.
+            </p>
+          </div>
+          <!-- Item 3 -->
+          <div class="custom-modulo-item">
+            <div class="custom-modulo-box">
+              <img
+                src="assets/img/modulos/relogio-white.png"
+                alt="Módulo Gestão de Atividades"
+              />
+            </div>
+            <h2 class="custom-modulo-item-h2">Gestão de Atividades</h2>
+            <p>
+              Aponte horas trabalhadas e emita relatórios detalhados para
+              acompanhar e analisar atividades com precisão e eficiência.
+            </p>
+          </div>
+          <!-- Item 4 -->
+          <div class="custom-modulo-item">
+            <div class="custom-modulo-box">
+              <img
+                src="assets/img/modulos/caminhao-white.png"
+                alt="Módulo Gestão de Frotas"
+              />
+            </div>
+            <h2 class="custom-modulo-item-h2">Gestão de Frotas</h2>
+            <p>
+              Controle a frota da sua empresa com monitoramento em tempo real,
+              gestão de manutenções e rastreabilidade segura.
+            </p>
+          </div>
+          <!-- Item 5 -->
+          <div class="custom-modulo-item">
+            <div class="custom-modulo-box">
+              <img
+                src="assets/img/modulos/fabrica-white.png"
+                alt="Módulo Produção"
+              />
+            </div>
+            <h2 class="custom-modulo-item-h2">Produção</h2>
+            <p>
+              Controle ordens de produção, estágios e roteiros, garantindo uma
+              gestão eficaz e integrada da produção.
+            </p>
+          </div>
+          <!-- Item 6 -->
+          <div class="custom-modulo-item">
+            <div class="custom-modulo-box">
+              <img
+                src="assets/img/modulos/qualidade-white.png"
+                alt="Módulo Qualidade"
+              />
+            </div>
+            <h2 class="custom-modulo-item-h2">Qualidade</h2>
+            <p>
+              Garanta a qualidade dos produtos com testes, inspeções e
+              relatórios otimizados para monitorar e acompanhar todas as
+              situações.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Auditoria -->
+      <section class="auditoria-section">
+        <div class="auditoria-content">
+          <div class="auditoria-text">
+            <h1 class="auditoria-title">
+              Onde você estiver, no celular ou computador.
+            </h1>
+            <p>
+              Mantenha o controle completo sobre os padrões de qualidade ISO
+              9001 e as boas práticas de fabricação (BPF), apontamento de horas,
+              e muitos mais. Gerencia diretamente no seu dispositivo móvel.
+              Simplifique auditorias e relatórios com uma solução digital
+              prática e eficiente.
+            </p>
+            <p>
+              Tudo o que você precisa para gerenciar e garantir a conformidade,
+              agora acessível de qualquer lugar.
+            </p>
+          </div>
+          <div class="auditoria-image">
+            <img src="assets/img/apps4.png" alt="Mockup do App de Auditoria" />
+          </div>
+        </div>
+      </section>
     </main>
+    <!-- Pop-up -->
+    <div id="popup-form" class="popup-overlay">
+      <div class="popup">
+        <h2>Entre em Contato!</h2>
+        <p>Cadastre-se para que possamos entrar em contato com uma oferta especial feita para você.</p>
+        <form action="https://getform.io/f/avrexypa" method="POST">
+          <input type="text" name="name" placeholder="Seu Nome" required />
+          <input type="email" name="email" placeholder="Seu E-mail" required />
+          <input type="tel" name="phone" placeholder="Seu Telefone" required />
+          
+          <!-- Anti-spam hidden input -->
+          <input type="hidden" name="_gotcha" style="display:none !important">
+          
+          <!-- Texto de consentimento -->
+          <p class="consent-text">
+            Ao clicar em enviar, você concorda com nossa 
+            <a href="politica-privacidade.html" target="_blank">Política de Privacidade</a> 
+            e com a 
+            <a href="https://getform.com/privacy/#:~:text=We%20may%20share%20Personal%20information,potential%20violations%20thereof%2C%20(c)" target="_blank">Política de Privacidade da Getform.io</a>.
+          </p>
+    
+          <!-- Botão de Envio -->
+          <button type="submit">Enviar</button>
+        </form>
+        <button class="popup-close" onclick="closePopup()">Fechar</button>
+      </div>
+    </div>
+    
 
     <!-- Botão WhatsApp Flutuante -->
     <a
@@ -338,8 +546,32 @@
             ><img src="assets/img/social/linkedin.svg"
           /></a>
         </div>
+          <address>
+            <p>
+              R. Emilia Tiberio Joaquim, 311 - Tereza Cristina, Içara - SC • 
+              CEP: 88820-000              
+            </p>
+            <p>
+              Tel: <a href="tel:+5548988145971">(48) 98814-5971</a> • 
+              Tel Fixo: <a href="tel:+554834320790">(48) 3432-0790</a> • 
+              Email: <a href="mailto:contato@appsotecnologia.com.br">contato@appsotecnologia.com.br</a> • 
+              CNPJ: 32.378.241/0001-65
+            </p>
+          </address>
         <p>© 2024 Appso Tecnologia LTDA. Todos os direitos reservados.</p>
       </div>
     </footer>
+    <script src="../assets/js/carousel.js"></script>
+    <script>
+      function showPopup() {
+        document.getElementById("popup-form").style.display = "flex";
+      }
+
+      function closePopup() {
+        document.getElementById("popup-form").style.display = "none";
+      }
+
+      setTimeout(showPopup, 20000);
+    </script>
   </body>
 </html>
