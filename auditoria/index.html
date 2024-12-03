@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css?v=1.0.2" />
+    <link rel="stylesheet" href="css/style.css?v=1.0.4" />
     <link rel="stylesheet" href="css/popup.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,20 +11,6 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-TLNFTBSN");
-    </script>
-    <!-- End Google Tag Manager -->
     <!-- Favicon -->
     <link
       rel="shortcut icon"
@@ -134,18 +120,22 @@
         src="https://www.facebook.com/tr?id=1853413115186727&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Meta Pixel Code -->
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-M5W9XMFS");
+    </script>
+    <!-- End Google Tag Manager -->
   </head>
   <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-TLNFTBSN"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
     <header class="hero-section">
       <nav>
         <img class="logo" src="assets/img/empx-logo.png" alt="Logo EMPX" />
@@ -161,14 +151,16 @@
           <h3>
             Uma solução de software fácil de usar, acessível e, ao mesmo tempo,
             robusta e adaptável. Perfeita para empresas de todos os tamanhos, do
-            pequeno ao grande porte. <strong>Verifique nossas funcionalidades logo abaixo!</strong>
+            pequeno ao grande porte.
+            <strong>Verifique nossas funcionalidades logo abaixo!</strong>
           </h3>
-          <h4>Uma solução de software fácil de usar, acessível e, ao mesmo tempo,
+          <h4>
+            Uma solução de software fácil de usar, acessível e, ao mesmo tempo,
             robusta e adaptável. Perfeita para empresas de todos os tamanhos, do
-            pequeno ao grande porte.</h4>
+            pequeno ao grande porte.
+          </h4>
           <a
-            href="https://api.whatsapp.com/send/?phone=%2B5548988145971&text&type=phone_number&app_absent=0"
-            target="_blank"
+            href="#contato"
             class="button"
             >Entre em Contato</a
           >
@@ -180,6 +172,27 @@
     </header>
     <!-- Restante do Conteúdo do Site -->
     <main>
+      <!-- Seção de Vídeo -->
+      <section class="video-section">
+        <div class="video-content">
+          <h1 class="video-title">Conheça o EmpX</h1>
+          <p class="video-description">
+            Assista ao vídeo abaixo para ver como o EmpX pode revolucionar a
+            gestão da sua empresa.
+          </p>
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/KenskC2aHys?si=vIfCRw9QgaDhe8JU"
+              title="EmpX em Ação"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
       <!-- Módulos em Grid -->
       <section class="modulos-section">
         <h1 class="modulos-titulo">Conheça as Funcionalidades</h1>
@@ -203,10 +216,7 @@
           <!-- Item 2 -->
           <div class="modulo-item">
             <div class="modulo-box">
-              <img
-                src="assets/img/modulos/alvo.png"
-                alt="Módulo Suprimentos"
-              />
+              <img src="assets/img/modulos/alvo.png" alt="Módulo Suprimentos" />
             </div>
             <h2 class="modulo-item-h2">Precisão nas Informações</h2>
             <p>
@@ -223,7 +233,8 @@
             </div>
             <h2 class="modulo-item-h2">Resultados em Tempo Real</h2>
             <p>
-              Acompanhe os resultados instantaneamente, onde quer que você esteja.
+              Acompanhe os resultados instantaneamente, onde quer que você
+              esteja.
             </p>
           </div>
           <!-- Item 4 -->
@@ -236,7 +247,8 @@
             </div>
             <h2 class="modulo-item-h2">Registro com Imagens</h2>
             <p>
-              Documente auditorias com fotos, garantindo registros completos e detalhados.
+              Documente auditorias com fotos, garantindo registros completos e
+              detalhados.
             </p>
           </div>
           <!-- Item 5 -->
@@ -249,20 +261,19 @@
             </div>
             <h2 class="modulo-item-h2">Registro de Ações e Prazos</h2>
             <p>
-              Acompanhe ações corretivas e prazos, mantendo o controle do progresso.
+              Acompanhe ações corretivas e prazos, mantendo o controle do
+              progresso.
             </p>
           </div>
           <!-- Item 6 -->
           <div class="modulo-item">
             <div class="modulo-box">
-              <img
-                src="assets/img/modulos/globo.png"
-                alt="Módulo Qualidade"
-              />
+              <img src="assets/img/modulos/globo.png" alt="Módulo Qualidade" />
             </div>
             <h2 class="modulo-item-h2">Acesso Irrestrito</h2>
             <p>
-              Audite e acompanhe os processos diretamente do seu dispositivo móvel ou desktop, sem restrições.
+              Audite e acompanhe os processos diretamente do seu dispositivo
+              móvel ou desktop, sem restrições.
             </p>
           </div>
         </div>
@@ -291,10 +302,7 @@
           <!-- Item 2 -->
           <div class="custom-modulo-item">
             <div class="custom-modulo-box">
-              <img
-                src="assets/img/modulos/alvo.png"
-                alt="Módulo Suprimentos"
-              />
+              <img src="assets/img/modulos/alvo.png" alt="Módulo Suprimentos" />
             </div>
             <h2 class="custom-modulo-item-h2">Precisão nas Informações</h2>
             <p>
@@ -311,7 +319,8 @@
             </div>
             <h2 class="custom-modulo-item-h2">Resultados em Tempo Real</h2>
             <p>
-              Acompanhe os resultados instantaneamente, onde quer que você esteja.
+              Acompanhe os resultados instantaneamente, onde quer que você
+              esteja.
             </p>
           </div>
           <!-- Item 4 -->
@@ -324,7 +333,8 @@
             </div>
             <h2 class="custom-modulo-item-h2">Registro com Imagens</h2>
             <p>
-              Documente auditorias com fotos, garantindo registros completos e detalhados.
+              Documente auditorias com fotos, garantindo registros completos e
+              detalhados.
             </p>
           </div>
           <!-- Item 5 -->
@@ -337,20 +347,19 @@
             </div>
             <h2 class="custom-modulo-item-h2">Registro de Ações e Prazos</h2>
             <p>
-              Acompanhe ações corretivas e prazos, mantendo o controle do progresso.
+              Acompanhe ações corretivas e prazos, mantendo o controle do
+              progresso.
             </p>
           </div>
           <!-- Item 6 -->
           <div class="custom-modulo-item">
             <div class="custom-modulo-box">
-              <img
-                src="assets/img/modulos/globo.png"
-                alt="Módulo Qualidade"
-              />
+              <img src="assets/img/modulos/globo.png" alt="Módulo Qualidade" />
             </div>
             <h2 class="custom-modulo-item-h2">Acesso Irrestrito</h2>
             <p>
-              Audite e acompanhe os processos diretamente do seu dispositivo móvel ou desktop, sem restrições.
+              Audite e acompanhe os processos diretamente do seu dispositivo
+              móvel ou desktop, sem restrições.
             </p>
           </div>
         </div>
@@ -411,9 +420,9 @@
             </p>
             <p>
               Desde o momento da implantação até os ajustes finos,
-              <strong> caminhamos ao seu lado</strong>. Nossa equipe garante
-              que cada etapa seja simples e eficiente, para que você possa focar
-              no que mais importa: fazer sua empresa crescer.
+              <strong> caminhamos ao seu lado</strong>. Nossa equipe garante que
+              cada etapa seja simples e eficiente, para que você possa focar no
+              que mais importa: fazer sua empresa crescer.
             </p>
             <p>
               Não se trata apenas de tecnologia, mas de parceria.
@@ -450,7 +459,7 @@
             <p>
               Eleve sua gestão a novos patamares — agende uma demonstração hoje!
             </p>
-            <a href="dashboards.html" target="_blank" class="dashboard-button"
+            <a href="#contato" class="dashboard-button"
               >Entre em Contato</a
             >
           </div>
@@ -483,7 +492,7 @@
     </main>
 
     <!-- Botão WhatsApp Flutuante -->
-    <a
+    <!-- <a
       href="whatsapp.html"
       style="
         position: fixed;
@@ -502,7 +511,15 @@
       target="_blank"
     >
       <i style="margin-top: 16px" class="fa fa-whatsapp"></i>
-    </a>
+    </a> -->
+
+    <section class="modulos-section" id="contato">
+      <h1 class="modulos-titulo">Entre em Contato!</h1>
+      <p class="modulos-subtitulo">
+        Preencha o formulário e entraremos em contato com você o mais rápido possível.
+      </p>
+      <div id="meu-formulario"></div>
+    </section>
 
     <footer>
       <svg
@@ -548,19 +565,28 @@
       </div>
     </footer>
     <script src="../assets/js/carousel.js"></script>
-    <!-- Google -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-M5W9XMFS"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=AW-11332400310"
+      charset="utf-8"
+      type="text/javascript"
+      src="//js.hsforms.net/forms/embed/v2.js"
     ></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "AW-11332400310");
+      hbspt.forms.create({
+        portalId: "48403383",
+        formId: "8045fbe5-eadb-499c-a866-326bb3231d1d",
+        target: "#meu-formulario"
+      });
     </script>
   </body>
 </html>

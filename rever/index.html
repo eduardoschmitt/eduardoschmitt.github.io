@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rever</title>
     <link rel="stylesheet" href="css/default.css" />
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/index.css?v=1.0.2" />
     <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon" />
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -101,6 +101,20 @@
         src="https://www.facebook.com/tr?id=1853413115186727&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Meta Pixel Code -->
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-M5W9XMFS");
+    </script>
+    <!-- End Google Tag Manager -->
   </head>
   <body>
     <header class="cabecalho">
@@ -311,17 +325,14 @@
         </section>
       </article>
 
-      <article class="contato">
-        <!-- Contato -->
+      <!-- Contato -->
+      <article class="contato" id="contato">
         <section>
-          <h1 class="titulo-servico">Fale conosco no WhatsApp</h1>
-        </section>
-        <section class="contato-divisao" id="contato">
-          <a href="obrigado.html" target="_blank"
-            ><img src="icons/botao-whatsapp.png" alt="Botão WhatsApp"
-          /></a>
+          <h1 class="titulo-servico">Fale Conosco!</h1>
         </section>
       </article>
+      <div id="meu-formulario"></div>
+
     </main>
     <footer>
       <!-- <p>© 2022 Appso Tecnologia. Todos os direitos reservados</p> -->
@@ -366,5 +377,27 @@
       </section>
     </footer>
     <script src="script.js"></script>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-M5W9XMFS"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <script
+      charset="utf-8"
+      type="text/javascript"
+      src="//js.hsforms.net/forms/embed/v2.js"
+    ></script>
+    <script>
+      hbspt.forms.create({
+        portalId: "48403383",
+        formId: "8045fbe5-eadb-499c-a866-326bb3231d1d",
+        target: "#meu-formulario",
+      });
+    </script>
   </body>
 </html>

@@ -1029,3 +1029,27 @@ footer a {
     margin-top: -100px;
   }
 }
+
+/* Formulário */
+#meu-formulario {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff; /* Fundo branco */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  border-radius: 8px; /* Cantos arredondados */
+  font-family: 'Sora', sans-serif;
+  margin-bottom: 100px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  #meu-formulario {
+      padding: 15px;
+  }
+
+  #meu-formulario h1 {
+      font-size: 1.5rem;
+  }
+}

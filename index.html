@@ -55,7 +55,7 @@
     />
     <link rel="stylesheet" href="assets/css/Simple-Slider-Simple-Slider.css" />
     <link rel="stylesheet" href="assets/css/Team-images.css" />
-    <link rel="stylesheet" href="assets/css/duh-styles.css?v=1.0.1" />
+    <link rel="stylesheet" href="assets/css/duh-styles.css?v=1.0.2" />
     <link rel="stylesheet" href="assets/css/vesperr.css" />
     <link
       rel="stylesheet"
@@ -131,6 +131,20 @@
         src="https://www.facebook.com/tr?id=1853413115186727&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Meta Pixel Code -->
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-M5W9XMFS");
+    </script>
+    <!-- End Google Tag Manager -->
   </head>
 
   <body>
@@ -180,9 +194,9 @@
                 Rever Cidadão
               </a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#endereco">Contato</a>
-            </li>
+            </li> -->
           </ul>
           <!-- <a class="btn-menu" role="button" href="contato.html" target="_blank"
             >Contato</a
@@ -198,7 +212,7 @@
         <h2>
           Transformando o mundo através da tecnologia e do compromisso social
         </h2>
-        <a class="btn-geral" href="obrigado.html" target="_blank"
+        <a class="btn-geral" href="#formulario-novo"
           ><i class="fa fa-phone" style="margin-right: 10px"></i>Entrar em
           Contato</a
         >
@@ -910,7 +924,7 @@
     <!-- End Depoimentos Section -->
 
     <!-- Botão WhatsApp Flutuante -->
-    <a
+    <!-- <a
       href="whatsapp.html"
       style="
         position: fixed;
@@ -929,8 +943,16 @@
       target="_blank"
     >
       <i style="margin-top: 16px" class="fa fa-whatsapp"></i>
-    </a>
+    </a> -->
 
+    <!-- Formulário -->
+    <div id="formulario-novo" class="section-title" data-aos="fade-up">
+      <h2>Contato</h2>
+      <p>Feedbacks e experiências autênticas de nossos clientes</p>
+    </div>
+    <div id="meu-formulario"></div>
+
+    <!-- ======= Footer ======= -->
     <footer class="text-center">
       <div class="container text-muted py-4 py-lg-5" style="margin-top: -32px">
         <ul class="list-inline">
@@ -1049,6 +1071,7 @@
         <p>© 2024 Appso Tecnologia LTDA. Todos os direitos reservados.</p>
       </div>
     </footer>
+    
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
     <script src="assets/js/Simple-Slider.js"></script>
@@ -1056,19 +1079,27 @@
     <script src="assets/vendors/highlight.js"></script>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/carousel.js"></script>
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-M5W9XMFS"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=AW-11332400310"
+      charset="utf-8"
+      type="text/javascript"
+      src="//js.hsforms.net/forms/embed/v2.js"
     ></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "AW-11332400310");
+      hbspt.forms.create({
+        portalId: "48403383",
+        formId: "8045fbe5-eadb-499c-a866-326bb3231d1d",
+        target: "#meu-formulario"
+      });
     </script>
   </body>
 </html>

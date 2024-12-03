@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css?v=1.0.2" />
+    <link rel="stylesheet" href="css/style.css?v=1.0.3" />
     <link rel="stylesheet" href="css/popup.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,7 +22,7 @@
         j.async = true;
         j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
         f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-TLNFTBSN");
+      })(window, document, "script", "dataLayer", "GTM-M5W9XMFS");
     </script>
     <!-- End Google Tag Manager -->
     <!-- Favicon -->
@@ -164,7 +164,7 @@
             Monte sua solução ideal com módulos flexíveis. Fale com a gente e
             personalize o EmpX para o seu negócio!
           </h4>
-          <a href="contato.html" target="_blank" class="button"
+          <a href="#contato" class="button"
             >Entre em Contato</a
           >
         </div>
@@ -269,7 +269,7 @@
             <p>
               Eleve sua gestão a novos patamares — agende uma demonstração hoje!
             </p>
-            <a href="dashboards.html" target="_blank" class="dashboard-button"
+            <a href="#contato" class="dashboard-button"
               >Entre em Contato</a
             >
           </div>
@@ -534,7 +534,7 @@
     </div>
 
     <!-- Botão WhatsApp Flutuante -->
-    <a
+    <!-- <a
       href="whatsapp.html"
       style="
         position: fixed;
@@ -553,8 +553,16 @@
       target="_blank"
     >
       <i style="margin-top: 16px" class="fa fa-whatsapp"></i>
-    </a>
+    </a> -->
 
+    <section class="modulos-section" id="contato">
+      <h1 class="modulos-titulo">Entre em Contato!</h1>
+      <p class="modulos-subtitulo">
+        Preencha o formulário e entraremos em contato com você o mais rápido possível.
+      </p>
+      <div id="meu-formulario"></div>
+    </section>
+    
     <footer>
       <svg
         class="svg-footer"
@@ -599,7 +607,7 @@
       </div>
     </footer>
     <script src="../assets/js/carousel.js"></script>
-    <script>
+    <!-- <script>
       function showPopup() {
         document.getElementById("popup-form").style.display = "flex";
       }
@@ -609,20 +617,29 @@
       }
 
       setTimeout(showPopup, 20000);
-    </script>
-    <!-- Google -->
+    </script> -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-M5W9XMFS"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=AW-11332400310"
+      charset="utf-8"
+      type="text/javascript"
+      src="//js.hsforms.net/forms/embed/v2.js"
     ></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "AW-11332400310");
+      hbspt.forms.create({
+        portalId: "48403383",
+        formId: "8045fbe5-eadb-499c-a866-326bb3231d1d",
+        target: "#meu-formulario"
+      });
     </script>
   </body>
 </html>

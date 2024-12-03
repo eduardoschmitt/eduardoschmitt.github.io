@@ -1,19 +1,29 @@
-body {
-  background-color: #ffffff;
+/* Cores de Tema */
+:root {
+  --verde-appso: #34a853;
+  --cor-primaria: #ffffff;
+  --cor-secundaria: #f1f1f1;
+  --cor-acento: #34a853;
+  --cor-texto: #333333;
+  --cor-texto-claro: #ffffff;
 }
 
-/* menu alterado */
+body {
+  background-color: rgb(249, 255, 248);
+}
+
 .cabecalho a {
-  color: black;
+  color: var(--cor-texto);
+  transition: 0.3s;
 }
 
 .cabecalho a:hover {
-  background-color: white;
+  color: #2f2f2f;
+  background-color: #aadf91;;
 }
 
 .menu-mobile li a {
-  display: none;
-  color: rgb(0, 0, 0); 
+  color: var(--cor-texto);
 }
 
 /* Hero Section */
@@ -22,110 +32,154 @@ body {
   place-items: center;
   background-image: url('../imagens/hero-background.jpg');
   background-size: cover;
-  color: white;
+  background-position: center;
+  color: var(--cor-texto-claro);
   height: 50vh;
+  margin-bottom: -100px;
   text-align: center;
   padding: 20px;
-  margin-bottom: -50px;
 }
 
 .hero h1 {
-  color: var(--verde-appso);
+  color: var(--cor-acento);
   font-size: 4vh;
   margin-bottom: 20px;
 }
 
 .hero p {
-  color: var(--verde-appso);
+  color: var(--cor-acento);
   font-size: 2vh;
-  width: 60%;
+  max-width: 600px;
 }
 
-/* Modulos Section */
-.modulos {
-  padding: 50px 20px;
-
-}
-
-.modulo {
+/* Tabs Section */
+.tabs-section {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 40px;
+  justify-content: center;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.modulo img {
-  height: 10vh;
-  margin-bottom: 20px;
-}
-
-.modulo h3 {
-  font-size: 2.5vh;
-  color: var(--verde-appso);
-  margin-bottom: 10px;
-}
-
-.modulo p {
-  font-size: 1.8vh;
-  color: #333;
+.tabs-container {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 80%;
 }
 
-.modulo .detalhes {
-  margin-top: 20px;
+.tabs {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  background-color: #f1f1f1;
+  border-right: 1px solid #ddd;
+}
+
+.tab-button {
+  background-color: #f1f1f1;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
   text-align: left;
-  width: 90%;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s ease;
 }
 
-.modulo .detalhes h4 {
-  font-size: 2vh;
-  color: var(--verde-appso);
-  margin-bottom: 10px;
+.tab-button.active {
+  background-color: #34a853;
+  color: white;
 }
 
-.modulo .detalhes p {
-  font-size: 2vh;
-  color: #555;
+.tab-button:hover {
+  background-color: #e0e0e0;
 }
 
-@media only screen and (max-width: 599px) {
-  .hero {
-    margin-top: 100px;
+.tabs-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Tab Content Styles */
+.tabs-content {
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.tab-content h3 {
+  color: #34a853;
+  font-size: 2em;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border-bottom: 2px solid #34a853;
+  padding-bottom: 10px;
+}
+
+.tab-content p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+.tab-content p strong {
+  color: #34a853;
+}
+
+.tab-content:hover p {
+  color: #333;
+}
+
+.tab-content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-@media only screen and (min-width: 600px) {
-  .modulos {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
-@media only screen and (min-width: 900px) {
-  .modulos {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
 
 /* Contato Section */
 .contato {
-  display: grid;
-  place-items: center;
+  text-align: center;
   padding: 50px 20px;
 }
 
 .titulo-contato {
+  color: var(--cor-acento);
   font-size: 3vh;
-  color: var(--verde-appso);
   margin-bottom: 20px;
 }
 
 .contato p {
   font-size: 2vh;
-  margin-bottom: 20px;
+  color: var(--cor-texto);
 }
 
 .contato a img {
@@ -134,25 +188,17 @@ body {
 
 /* Footer */
 footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  place-items: center;
-  background-color: var(--verde-appso);
-  color: white;
-  text-align: center;
+  background-color: var(--cor-acento);
+  color: var(--cor-texto-claro);
   padding: 40px;
-}
-
-footer section {
-  padding: 20px;
+  text-align: center;
 }
 
 .links-uteis a {
   display: block;
-  text-decoration: none;
-  color: white;
+  color: var(--cor-texto-claro);
   margin: 5px 0;
-  transition: 0.3s;
+  text-decoration: none;
 }
 
 .links-uteis a:hover {
@@ -166,14 +212,119 @@ footer section {
 
 .footer-logo img {
   height: 8vh;
+  margin-top: 20px;
 }
 
-@media only screen and (max-width: 600px) {
-  footer {
-    grid-template-columns: 1fr;
+@media (min-width: 600px) {
+  .modulos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .modulos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Ajustes para mobile */
+@media (max-width: 768px) {
+  .tabs-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
   }
 
-  footer section {
+  .tabs-container {
+    flex-direction: column;
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .tabs {
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .tab-button {
+    flex: 1;
+    text-align: center;
     padding: 10px;
+    border-right: 1px solid #ddd;
+    border-bottom: none;
+    font-size: 0.9em;
+  }
+
+  .tab-button:last-child {
+    border-right: none;
+  }
+
+  .tabs-content {
+    padding: 20px 10px;
+    background-color: #ffffff;
+    box-shadow: none;
+  }
+
+  .tab-content h3 {
+    font-size: 1.5em;
+  }
+
+  .tab-content p {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+
+  .tab-content img {
+    margin-top: 10px;
+  }
+}
+
+/* Ajustes para telas menores que 600px */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 3vh;
+  }
+
+  .hero p {
+    font-size: 1.6vh;
+  }
+
+  .tabs {
+    flex-direction: column;
+  }
+
+  .tab-button {
+    padding: 8px;
+    font-size: 0.8em;
+  }
+
+  .tabs-content {
+    padding: 15px;
+  }
+
+  .tab-content h3 {
+    font-size: 1.3em;
+  }
+
+  .tab-content p {
+    font-size: 0.9em;
+  }
+
+  .tab-content img {
+    margin-top: 15px;
+  }
+
+  .contato p {
+    font-size: 1.5vh;
+  }
+
+  footer {
+    padding: 30px;
+  }
+
+  .footer-social a img, .footer-logo img {
+    height: 6vh;
   }
 }
