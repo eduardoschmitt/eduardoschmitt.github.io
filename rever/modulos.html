@@ -5,319 +5,235 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rever - Módulos</title>
-    <link rel="stylesheet" href="css/default.css" />
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/modulos.css?v=2.0.1" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@700&family=Sora:wght@400;700&display=swap"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap"
     />
   </head>
   <body>
-    <header class="cabecalho">
-      <nav>
-        <div>
+    <header class="site-header">
+      <div class="nav-container container">
+        <a class="logo" href="index.html">
           <img src="./icons/rever-logo2.png" alt="Logo do Rever" />
-        </div>
-        <ul class="menu">
-          <li><a href="../index.html">Appso</a></li>
-          <li><a href="#modulos">Módulos</a></li>
-          <li><a href="#contato">Contato</a></li>
-          <li>
-            <a href="https://revercidadao.appsotecnologia.com.br/"
-              >Rever Cidadão</a
-            >
-          </li>
-        </ul>
-        <button class="menu-mobile-button">≡</button>
-      </nav>
-      <ul class="menu-mobile">
-        <li><a href="../index.html">Appso</a></li>
-        <li><a href="#modulos">Módulos</a></li>
-        <li><a href="#contato">Contato</a></li>
-        <li>
-          <a href="https://revercidadao.appsotecnologia.com.br/"
-            >Rever Cidadão</a
-          >
-        </li>
-      </ul>
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+          <span></span>
+        </button>
+        <nav id="primary-nav" class="site-nav">
+          <a href="../index.html">Appso</a>
+          <a href="index.html#sobre">Sobre</a>
+          <a href="#modulos">Módulos</a>
+          <a href="#contato">Contato</a>
+          <a href="https://revercidadao.appsotecnologia.com.br/">Rever Cidadão</a>
+        </nav>
+      </div>
     </header>
+
     <main>
       <section class="hero">
-        <div>
-          <h1>Conheça os Módulos do Rever</h1>
-          <p>
-            Uma plataforma completa para gestão ambiental, trazendo soluções
-            inovadoras e práticas para cidadãos e gestão pública.
-          </p>
-        </div>
-      </section>
-
-      <section class="tabs-section">
-        <div class="tabs-container">
-          <div class="tabs">
-            <button class="tab-button active" data-tab="tab-1">
-              Fiscal Mobile
-            </button>
-            <button class="tab-button" data-tab="tab-2">
-              Vale Feira Digital
-            </button>
-            <button class="tab-button" data-tab="tab-3">
-              Núcleo do Bem-estar Animal
-            </button>
-            <button class="tab-button" data-tab="tab-4">Solicitações</button>
-            <button class="tab-button" data-tab="tab-5">
-              Ferramenta Personalizável
-            </button>
-            <button class="tab-button" data-tab="tab-6">Denúncias</button>
-            <button class="tab-button" data-tab="tab-7">Mural</button>
-            <button class="tab-button" data-tab="tab-8">Reciclagem</button>
-            <button class="tab-button" data-tab="tab-9">
-              Gestão de Contratos
-            </button>
-            <button class="tab-button" data-tab="tab-10">Agendamentos</button>
-            <button class="tab-button" data-tab="tab-11">Documentos</button>
-            <button class="tab-button" data-tab="tab-12">Condicionantes</button>
+        <div class="container hero-grid">
+          <div>
+            <span class="badge">Módulos inteligentes</span>
+            <h1 class="hero-title">Conheça os módulos do Rever</h1>
+            <p class="hero-text">
+              Uma plataforma completa para gestão ambiental, trazendo soluções
+              inovadoras e práticas para cidadãos e gestão pública.
+            </p>
           </div>
-
-          <div class="tabs-content">
-            <div class="tab-content active" id="tab-1">
-              <h3>Fiscal Mobile</h3>
-              <p>
-                O módulo Fiscal Mobile permite que os fiscais ambientais
-                realizem suas atividades de maneira mais eficiente. Com a
-                ferramenta, é possível registrar infrações, gerar relatórios e
-                acompanhar o status das fiscalizações em tempo real. Além disso,
-                o módulo oferece integração com uma impressora portátil,
-                permitindo imprimir infrações, garantindo uma visão completa da
-                gestão ambiental.
-              </p>
-            </div>
-            <div class="tab-content" id="tab-2">
-              <h3>Vale Feira Digital</h3>
-              <p>
-                O módulo <strong>Vale Feira Digital</strong> é uma solução
-                inovadora que permite à prefeitura conceder créditos aos
-                servidores, exclusivos para uso na feira de agricultura familiar
-                local. Com isso, incentiva-se a economia agrícola e promove-se o
-                desenvolvimento sustentável da comunidade. Através do Vale Feira
-                Digital, os créditos são disponibilizados eletronicamente,
-                eliminando a necessidade de impressão de vale feiras físicos e
-                economizando com custos de gráfica. O sistema gerencia todas as
-                transações de forma eficiente, mantendo um histórico detalhado,
-                evitando fraudes e facilitando a distribuição dos vales aos
-                servidores. Além disso, o módulo oferece integração com outros
-                sistemas da plataforma, garantindo uma gestão transparente e
-                completa das atividades, e apoiando a agricultura familiar
-                local.
-              </p>
-            </div>
-            <div class="tab-content" id="tab-3">
-              <h3>Núcleo do Bem-estar Animal</h3>
-              <p>
-                Este módulo oferece uma plataforma completa para a gestão do
-                bem-estar animal. Com ele, os usuários podem agendar castrações,
-                cadastrar seus pets, registrar vacinas e localizar clínicas
-                credenciadas . As solicitações e dados são enviados diretamente
-                para a prefeitura, garantindo uma gestão eficiente dos serviços
-                de atendimento animal. Além disso, há um ambiente dedicado para
-                as clínicas, onde elas podem receber demandas e informar os
-                atendimentos realizados.
-              </p>
-            </div>
-            <div class="tab-content" id="tab-4">
-              <h3>Solicitações</h3>
-              <p>
-                O módulo de Solicitações permite que os cidadãos façam pedidos
-                diretamente para a gestão pública, abrangendo desde reparos em
-                infraestrutura, limpeza urbana e serviços comunitários, até
-                solicitações de documentos, máquinas e recebimento de doações. A
-                plataforma organiza as solicitações, facilitando o
-                acompanhamento e a resposta rápida. Com isso, a comunicação
-                entre cidadãos e gestão pública se torna mais eficiente e
-                transparente , garantindo que as necessidades da comunidade
-                sejam atendidas de maneira ágil e organizada.
-              </p>
-            </div>
-            <div class="tab-content" id="tab-5">
-              <h3>Ferramenta Personalizável</h3>
-              <p>
-                A Ferramenta Personalizável do Rever permite que a gestão
-                pública configure a plataforma de acordo com suas necessidades
-                específicas. A prefeitura pode cadastrar diferentes tipos de
-                solicitações, como pedidos de maquinário, documentos, licenças,
-                entre outros. Os servidores da prefeitura têm a flexibilidade de
-                definir os campos relevantes para cada tipo de solicitação,
-                especificando quais são obrigatórios, opcionais, incluindo
-                anexos, localizações e outros detalhes importantes. Essa
-                personalização garante que a solução se adeque perfeitamente aos
-                processos e demandas locais, proporcionando uma gestão mais
-                eficaz e personalizada.
-              </p>
-            </div>
-            <div class="tab-content" id="tab-6">
-              <h3>Denúncias</h3>
-              <p>
-                Com o módulo de Denúncias, os cidadãos podem reportar problemas
-                ambientais de forma rápida e anônima. A gestão pública recebe
-                essas informações em tempo real e pode agir de imediato para
-                resolver os problemas. Além disso, o módulo oferece estatísticas
-                e relatórios sobre as denúncias, auxiliando na implementação de
-                medidas preventivas.
-              </p>
-            </div>
-            <div class="tab-content" id="tab-7">
-              <h3>Mural</h3>
-              <p>
-                O Mural é uma ferramenta prática para a divulgação de
-                informativos, campanhas e orientações sobre resíduos. Ele
-                permite que os servidores públicos cadastrem e publiquem essas
-                informações de maneira simples e eficiente, garantindo que a
-                comunidade tenha acesso a conteúdo relevante e atualizado. Dessa
-                forma, o Mural facilita a comunicação entre a gestão pública e
-                os cidadãos, promovendo a conscientização e a educação
-                ambiental.
-              </p>
-            </div>
-            <div class="tab-content" id="tab-8">
-              <h3>Reciclagem com Controle de Créditos</h3>
-              <p>
-                O módulo de Reciclagem com Controle de Créditos incentiva a
-                participação dos cidadãos na reciclagem e promove o
-                desenvolvimento sustentável da comunidade. Os cidadãos levam
-                seus materiais recicláveis a um centro de pesagem autorizado,
-                onde os reciclados são pesados e convertidos em créditos
-                digitais. Esses créditos podem ser usados na feira de
-                agricultura familiar local, incentivando a economia agrícola.
-                Essa iniciativa traz benefícios como preservação ambiental e
-                redução de custos para a gestão municipal, já que as toneladas
-                de lixo que deixam de ir para o aterro e o gasto com caminhões
-                de lixo são convertidos em poder de compra para os cidadãos . A
-                economia gerada pode ser estimada e revertida em pagamentos. O
-                projeto fortalece a economia local e a cadeia de reciclagem,
-                além de apoiar a agricultura familiar e auxiliar famílias
-                carentes. A gestão do projeto é facilitada com dados em tempo
-                real, garantindo transparência e segurança da informação,
-                promovendo uma integração eficiente entre a reciclagem e a
-                economia local.
-              </p>
-            </div>
-            <div class="tab-content" id="tab-9">
-              <h3>Gestão de Contratos</h3>
-              <p>
-                O módulo Gestão de Contratos permite à administração pública
-                gerenciar contratos de forma eficiente e organizada. Com essa
-                ferramenta, é possível cadastrar, monitorar e acompanhar todos
-                os contratos firmados, garantindo que as obrigações e prazos
-                sejam cumpridos. Dessa forma, o módulo contribui para uma
-                administração mais transparente e eficaz, reduzindo riscos e
-                aumentando a eficiência na gestão pública.
-              </p>
-            </div>
-            <div class="tab-content" id="tab-10">
-              <h3>Agendamentos</h3>
-              <p>
-                Permite ao cidadão agendar diversos serviços oferecidos pela
-                prefeitura, como atendimentos na área da saúde, castração de
-                animais, solicitações de máquinas agrícolas, entre outros. O
-                sistema é flexível e pode ser aplicado a qualquer serviço que
-                exija agendamento, com a prefeitura gerenciando as opções
-                disponíveis e o cidadão realizando a solicitação de forma
-                prática.
-              </p>
-            </div>
-            <div class="tab-content" id="tab-11">
-              <h3>Gestão de Documentos</h3>
-              <p>
-                Facilita o gerenciamento digital de documentos em todos os
-                departamentos da prefeitura, eliminando a necessidade de
-                impressão e contribuindo para a redução do consumo de papel,
-                promovendo eficiência e sustentabilidade.
-              </p>
-            </div>
-            <div class="tab-content" id="tab-12">
-              <h3>Gestão de Condicionantes</h3>
-              <p>
-                Automatiza a gestão de condicionantes, com controle de prazos e
-                vencimentos, enviando notificações automáticas por e-mail para
-                que as empresas acompanhem suas obrigações e evitem atrasos na
-                entrega.
-              </p>
-            </div>
+          <div>
+            <img src="imagens/reciclados-resized.png" alt="Módulos Rever" />
           </div>
         </div>
       </section>
 
-      <section class="contato" id="contato">
-        <h4 class="titulo-contato">Fale Conosco</h4>
-        <a href="contato.html" target="_blank"
-          ><img src="icons/botao-whatsapp.png" alt="Botão WhatsApp"
-        /></a>
+      <section class="section" id="modulos">
+        <div class="container tabs">
+          <div>
+            <h2 class="section-title">Funcionalidades em destaque</h2>
+            <p class="section-subtitle">
+              Explore cada módulo e descubra como o Rever resolve necessidades
+              específicas da gestão ambiental com fluxos simples e rastreáveis.
+            </p>
+          </div>
+          <div class="tabs-nav" role="tablist">
+            <button class="active" data-tab="tab-1" role="tab">Fiscal Mobile</button>
+            <button data-tab="tab-2" role="tab">Vale Feira Digital</button>
+            <button data-tab="tab-3" role="tab">Bem-estar Animal</button>
+            <button data-tab="tab-4" role="tab">Solicitações</button>
+            <button data-tab="tab-5" role="tab">Ferramenta Personalizável</button>
+            <button data-tab="tab-6" role="tab">Denúncias</button>
+            <button data-tab="tab-7" role="tab">Mural</button>
+            <button data-tab="tab-8" role="tab">Reciclagem</button>
+            <button data-tab="tab-9" role="tab">Gestão de Contratos</button>
+            <button data-tab="tab-10" role="tab">Agendamentos</button>
+            <button data-tab="tab-11" role="tab">Documentos</button>
+            <button data-tab="tab-12" role="tab">Condicionantes</button>
+          </div>
+
+          <div class="tab-panel active" id="tab-1" role="tabpanel">
+            <h3>Fiscal Mobile</h3>
+            <p>
+              O módulo Fiscal Mobile permite que os fiscais ambientais realizem
+              suas atividades de maneira mais eficiente. Com a ferramenta, é
+              possível registrar infrações, gerar relatórios e acompanhar o
+              status das fiscalizações em tempo real.
+            </p>
+          </div>
+          <div class="tab-panel" id="tab-2" role="tabpanel">
+            <h3>Vale Feira Digital</h3>
+            <p>
+              Uma solução que concede créditos a servidores para uso na feira de
+              agricultura familiar local, eliminando vale feiras físicos e
+              promovendo transparência nas transações.
+            </p>
+          </div>
+          <div class="tab-panel" id="tab-3" role="tabpanel">
+            <h3>Núcleo do Bem-estar Animal</h3>
+            <p>
+              Plataforma completa para gestão do bem-estar animal, com agendamentos
+              de castrações, vacinação e integração com clínicas credenciadas.
+            </p>
+          </div>
+          <div class="tab-panel" id="tab-4" role="tabpanel">
+            <h3>Solicitações</h3>
+            <p>
+              Centraliza pedidos da população, organizando fluxos de reparos,
+              documentos e serviços comunitários com acompanhamento eficiente.
+            </p>
+          </div>
+          <div class="tab-panel" id="tab-5" role="tabpanel">
+            <h3>Ferramenta Personalizável</h3>
+            <p>
+              Configure campos, anexos e fluxos por demanda, garantindo que a
+              plataforma se adapte aos processos locais.
+            </p>
+          </div>
+          <div class="tab-panel" id="tab-6" role="tabpanel">
+            <h3>Denúncias</h3>
+            <p>
+              Canal rápido e anônimo para reportes ambientais, com estatísticas e
+              relatórios em tempo real.
+            </p>
+          </div>
+          <div class="tab-panel" id="tab-7" role="tabpanel">
+            <h3>Mural</h3>
+            <p>
+              Divulgue campanhas, orientações e informativos com publicação simples
+              e alcance ampliado.
+            </p>
+          </div>
+          <div class="tab-panel" id="tab-8" role="tabpanel">
+            <h3>Reciclagem com Controle de Créditos</h3>
+            <p>
+              Incentiva a participação cidadã na reciclagem com créditos digitais,
+              fortalecendo a economia local e a cadeia sustentável.
+            </p>
+          </div>
+          <div class="tab-panel" id="tab-9" role="tabpanel">
+            <h3>Gestão de Contratos</h3>
+            <p>
+              Organize contratos públicos com controle de prazos e obrigações,
+              garantindo transparência e eficiência.
+            </p>
+          </div>
+          <div class="tab-panel" id="tab-10" role="tabpanel">
+            <h3>Agendamentos</h3>
+            <p>
+              Agende atendimentos e serviços municipais com flexibilidade para
+              saúde, castração e outras demandas comunitárias.
+            </p>
+          </div>
+          <div class="tab-panel" id="tab-11" role="tabpanel">
+            <h3>Gestão de Documentos</h3>
+            <p>
+              Reduza impressões e centralize documentos digitais de forma segura e
+              eficiente.
+            </p>
+          </div>
+          <div class="tab-panel" id="tab-12" role="tabpanel">
+            <h3>Gestão de Condicionantes</h3>
+            <p>
+              Controle prazos e vencimentos com notificações automáticas para
+              evitar atrasos e garantir conformidade.
+            </p>
+          </div>
+        </div>
       </section>
-      <section class="saiba-mais-section">
-        <a href="/rever/index.html"
-          ><button class="saiba-mais-btn">Voltar</button></a
-        >
+
+      <section class="section section--soft" id="contato">
+        <div class="container contact-card">
+          <div>
+            <h2 class="section-title">Vamos conversar?</h2>
+            <p class="section-subtitle">
+              Fale com nossa equipe para desenhar um plano personalizado para a
+              sua prefeitura.
+            </p>
+            <div class="button-group" style="margin-top: var(--space-4)">
+              <a class="btn btn-primary" href="https://wa.me/+5548988145971">
+                Conversar no WhatsApp
+              </a>
+              <a class="btn btn-outline" href="index.html">Voltar ao site</a>
+            </div>
+          </div>
+          <div>
+            <img
+              src="imagens/celular-app-rever.png"
+              alt="Aplicativo Rever"
+              style="border-radius: var(--radius-md); box-shadow: var(--shadow-card)"
+            />
+          </div>
+        </div>
       </section>
     </main>
-    <footer>
-      <section class="links-uteis">
-        <p>Links Úteis</p>
-        <a href="http://appsotecnologia.com.br/" target="_blank">Appso</a>
-        <a href="https://revercidadao.appsotecnologia.com.br/" target="_blank"
-          >Rever Cidadão</a
-        >
-        <a href="https://rever.appsotecnologia.com.br/" target="_blank"
-          >Rever Web</a
-        >
-        <a
-          href="https://play.google.com/store/apps/details?id=br.com.appsotecnologia.appsoapp&hl=pt_BR&gl=US"
-          target="_blank"
-          >Rever Mobile</a
-        >
-      </section>
-      <section>
-        <p>Contato</p>
-        <p>
-          Rua Emília Tibério Joaquim, 311 Bairro Tereza Cristina, Içara (SC)
-        </p>
-        <p>(48) 3432-0790</p>
-        <section class="footer-social">
-          <a href="https://wa.me/+5548988145971" target="_blank"
-            ><img src="icons/whatsapp-480.png" alt="WhatsApp"
-          /></a>
-          <a href="https://www.facebook.com/appsotecnologia" target="_blank"
-            ><img src="icons/facebook-480.png" alt="Facebook"
-          /></a>
-          <a
-            href="https://br.linkedin.com/company/appso-tecnologia-ltda"
-            target="_blank"
-            ><img src="icons/linkedin-480.png" alt="Linkedin"
-          /></a>
-        </section>
-      </section>
-      <section class="footer-logo">
-        <img src="icons/rever-logo-white.png" alt="Rever Logo" />
-        <img src="icons/appso-white.png" alt="Appso Tecnologia Logo" />
-      </section>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <h4>Links úteis</h4>
+          <ul>
+            <li><a href="http://appsotecnologia.com.br/" target="_blank">Appso</a></li>
+            <li>
+              <a href="https://revercidadao.appsotecnologia.com.br/" target="_blank">
+                Rever Cidadão
+              </a>
+            </li>
+            <li><a href="https://rever.appsotecnologia.com.br/" target="_blank">Rever Web</a></li>
+            <li>
+              <a
+                href="https://play.google.com/store/apps/details?id=br.com.appsotecnologia.appsoapp&hl=pt_BR&gl=US"
+                target="_blank"
+                >Rever Mobile</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contato</h4>
+          <p>Rua Emília Tibério Joaquim, 311 Bairro Tereza Cristina, Içara (SC)</p>
+          <p>(48) 3432-0790</p>
+          <div class="social-links">
+            <a href="https://wa.me/+5548988145971" target="_blank"
+              ><img src="icons/whatsapp-480.png" alt="WhatsApp"
+            /></a>
+            <a href="https://www.facebook.com/appsotecnologia" target="_blank"
+              ><img src="icons/facebook-480.png" alt="Facebook"
+            /></a>
+            <a href="https://br.linkedin.com/company/appso-tecnologia-ltda" target="_blank"
+              ><img src="icons/linkedin-480.png" alt="Linkedin"
+            /></a>
+          </div>
+        </div>
+        <div class="footer-logos">
+          <img src="icons/rever-logo-white.png" alt="Rever Logo" />
+          <img src="icons/appso-white.png" alt="Appso Tecnologia Logo" />
+        </div>
+      </div>
     </footer>
-    <script>
-      document.querySelectorAll(".tab-button").forEach((button) => {
-        button.addEventListener("click", () => {
-          const tabNumber = button.getAttribute("data-tab");
 
-          document
-            .querySelectorAll(".tab-button")
-            .forEach((btn) => btn.classList.remove("active"));
-          document
-            .querySelectorAll(".tab-content")
-            .forEach((content) => content.classList.remove("active"));
-
-          button.classList.add("active");
-          document.getElementById(tabNumber).classList.add("active");
-        });
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
