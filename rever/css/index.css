@@ -17,7 +17,7 @@ body {
 .apresentacao {
     display: grid;
     place-items: center;
-    background-image: url(../imagens/tree-resized.jpg);
+    background-image: url(../imagens/tree-resized.webp);
     background-size: cover;
     height: 100vh;
 }
@@ -592,7 +592,7 @@ h2 {
 
 @media screen and (min-width: 900px) {
     .parceiros-lista {
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 

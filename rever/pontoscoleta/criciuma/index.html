@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css?v=3">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <!-- Map Api -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <!-- Leaflet.fullscreen JavaScript -->
+    <script src="https://unpkg.com/leaflet-fullscreen@1.0.2/dist/Leaflet.fullscreen.js"></script>
+    <script src="https://kit.fontawesome.com/6c4f97555f.js" crossorigin="anonymous"></script>
+    <title>Coletas Rever</title>
+    <!-- Otimização de mecanismos de pesquisa -->
+    <meta name="description" content="Encontre os melhores pontos de coleta de recicláveis em Criciúma SC no aplicativo Rever. Troque seus recicláveis por créditos na feira da agricultura. Faça sua parte pela sustentabilidade!">
+    <meta name="keywords" content="pontos de coleta, recicláveis, Criciúma, SC, sustentabilidade, aplicativo Rever, troca de recicláveis por créditos">
+    <meta name="author" content="Eduardo Schmitt. Appso Tecnologia.">
+    <meta name="language" content="pt-BR">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://appsotecnologia.com.br/rever/pontoscoleta/criciuma/index.html" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Pontos de Coleta de Recicláveis em Criciúma SC - Aplicativo Rever" />
+    <meta property="og:description" content="Encontre os melhores pontos de coleta de recicláveis em Criciúma SC no aplicativo Rever. Troque seus recicláveis por créditos na feira da agricultura. Faça sua parte pela sustentabilidade!" />
+    <meta property="og:url" content="https://appsotecnologia.com.br/rever/pontoscoleta/criciuma/" />
+    <meta property="og:site_name" content="Pontos de Coleta de Recicláveis em Criciúma SC - Aplicativo Rever" />
+    <meta property="og:updated_time" content="2023-06-14T00:00:00-00:00" />
+    <meta property="article:published_time" content="2023-06-14T00:00:00-00:00" />
+    <meta property="article:modified_time" content="2023-06-14T00:00:00-00:00" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Pontos de Coleta de Recicláveis em Criciúma SC - Aplicativo Rever" />
+    <meta name="twitter:description" content="Encontre os melhores pontos de coleta de recicláveis em Criciúma SC no aplicativo Rever. Troque seus recicláveis por créditos na feira da agricultura. Faça sua parte pela sustentabilidade!" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="Appso Tecnologia" />
+    <meta name="twitter:label2" content="Time to read" />
+    <meta name="twitter:data2" content="Menos de um minuto" />
+</head>
+<body>
+    <header>
+        <div>
+            <!-- Logo -->
+            <!-- <img class="rever-logo" src="images/logo.png" alt="Logo Rever"> -->
+            <img class="rever-logo" src="images/logocri.png" alt="Logo Rever">
+        </div>
+        <div class="div-botao">
+            <a href="https://revercidadao.appsotecnologia.com.br/" target="_blank"><button>Acessar o Rever</button></a>
+        </div>
+    </header>
+    <main>
+        <section class="inicio">
+            <div class="inicio-esq">
+                <h1>Explore os pontos de coleta de materiais recicláveis em sua região <img src="images/icon-recycle.png" alt="ícone com o símbolo da reciclagem" class="icon-recycle"></h1>
+                <h2>Descubra os pontos de coleta de recicláveis em Criciúma SC e faça sua parte pela sustentabilidade!</h2>
+            </div>
+            <div class="inicio-dir">
+                <img src="images/recycle.svg" alt="">
+            </div>
+        </section>
+
+        <!-- Mapa -->
+        <section class="mapa">
+            <div id="map"></div>
+            <a class="btn-tela-cheia" href="map.html">Tela Cheia</a>
+        </section>
+
+        <!-- Cards -->
+        <section class="cards">
+            <!-- <div class="card">
+                <img class="card-img" src="images/cards/famcri.png" alt="FAMCRI">
+                <div class="card-conteudo">
+                    <h1 class="card-titulo">FAMCRI</h1>
+                    <p class="card-texto">R. Henrique Lage, 1873 - Santa Barbara, Criciúma - SC</p>
+                    <p class="card-texto">Horário: 08h às 17h de segunda a sexta</p>
+                    <a href="https://www.google.com.br/maps/place/FAMCRI/@-28.6871081,-49.3895244,17z/data=!3m1!4b1!4m11!1m3!11m2!2soRh-Ak3pRa-u77IFqYwnlA!3e3!3m6!1s0x952183c836b4c24d:0xf864927424e13824!8m2!3d-28.6871129!4d-49.3846535!15sCgEqkgESdXRpbGl0eV9jb250cmFjdG9y4AEA!16s%2Fg%2F11g_rml6pz?entry=ttu" target="_blank"><button class="card-botao">Abrir no Google Maps <img src="images/google-maps.png" class="g-map" alt=""></button></a>
+                </div>
+            </div> -->
+            <div class="card">
+                <img class="card-img" src="images/cards/nacoes.jpg" alt="Parque Cincinato Naspolini">
+                <div class="card-conteudo">
+                    <h1 class="card-titulo">Parque das Nações</h1>
+                    <p class="card-texto">Av. Centenário - Próspera, Criciúma - SC</p>
+                    <p class="card-texto">Horário: 08h às 17h de segunda a sexta</p>
+                    <a href="https://www.google.com.br/maps/place/Park+of+Nations+Cincinnatus+Naspolini+-+Av.+Centen%C3%A1rio+-+Pr%C3%B3spera,+SC/@-28.6848967,-49.3663259,14z/data=!4m7!1m3!11m2!2soRh-Ak3pRa-u77IFqYwnlA!3e3!3m2!1s0x9521788e89bca947:0xa3b962994151fa37!15sCgEqWgMiASqSAQRwYXJr4AEA?entry=ttu" target="_blank"><button class="card-botao">Abrir no Google Maps <img src="images/google-maps.png" class="g-map" alt=""></button></a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="images/cards/criciuma.jpg" alt="Intendência Quarta Linha">
+                <div class="card-conteudo">
+                    <h1 class="card-titulo">Intendência Quarta Linha</h1>
+                    <p class="card-texto">Rod. Luiz Rosso, 10200 - Quarta Linha, Criciúma - SC</p>
+                    <p class="card-texto">Horário: 08h às 17h de segunda a sexta</p>
+                    <a href="https://www.google.com.br/maps/place/Rod.+Luiz+Rosso,+10200+-+Quarta+Linha,+Crici%C3%BAma+-+SC,+88820-000/@-28.7810164,-49.3707212,17z/data=!3m1!4b1!4m11!1m3!11m2!2soRh-Ak3pRa-u77IFqYwnlA!3e3!3m6!1s0x9521801dfc9eb53b:0x2a8d4b5d1a2a5fb6!8m2!3d-28.7810212!4d-49.3658503!15sCgEqkgERY29tcG91bmRfYnVpbGRpbmfgAQA!16s%2Fg%2F11gdkzgntw?entry=ttu" target="_blank"><button class="card-botao">Abrir no Google Maps <img src="images/google-maps.png" class="g-map" alt=""></button></a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="images/cards/posto-hg.png" alt="Auto Posto HG - Shell">
+                <div class="card-conteudo">
+                    <h1 class="card-titulo">Auto Posto HG - Shell</h1>
+                    <p class="card-texto">KM 08 - Rod. Luiz Rosso, 9330 - Quarta Linha, Criciúma - SC</p>
+                    <p class="card-texto">Horário: 06h às 22h de segunda a sábado</p>
+                    <a href="https://www.google.com.br/maps/place/Auto+Posto+HG+-+Posto+Shell/@-28.773622,-49.3711216,17z/data=!3m1!4b1!4m11!1m3!11m2!2soRh-Ak3pRa-u77IFqYwnlA!3e3!3m6!1s0x952182089c5f0fe9:0xb1ba9f56aeccb94b!8m2!3d-28.7736268!4d-49.3662507!15sCgEqkgELZ2FzX3N0YXRpb27gAQA!16s%2Fg%2F11c205q6p7?entry=ttu" target="_blank"><button class="card-botao">Abrir no Google Maps <img src="images/google-maps.png" class="g-map" alt=""></button></a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="images/cards/ecoponto.jpg" alt="Ecoponto">
+                <div class="card-conteudo">
+                    <h1 class="card-titulo">Ecoponto</h1>
+                    <p class="card-texto">Ao Lado da Usina de Asfalto - Santa Barbara, Criciúma - SC</p>
+                    <p class="card-texto">Horário: 08h às 17h de segunda a sexta</p>
+                    <a href="https://www.google.com.br/maps/place/Ecoponto/@-28.7317552,-49.4071612,17z/data=!3m1!4b1!4m11!1m3!11m2!2soRh-Ak3pRa-u77IFqYwnlA!3e3!3m6!1s0x952183124decd8d1:0x9244edb6c16fede8!8m2!3d-28.73176!4d-49.4022903!15sCgEqkgEMZ2FyYmFnZV9kdW1w4AEA!16s%2Fg%2F11hwx95lby?entry=ttu" target="_blank"><button class="card-botao">Abrir no Google Maps <img src="images/google-maps.png" class="g-map" alt=""></button></a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="images/cards/criciuma.jpg" alt="FAMCRI">
+                <div class="card-conteudo">
+                    <h1 class="card-titulo">Intendência Santa Luzia</h1>
+                    <p class="card-texto">R. Getúlio Cândido Albino, 558-630 - Vila Nova Esperanca</p>
+                    <p class="card-texto">Horário: 08h às 17h de segunda a sexta</p>
+                    <a href="https://www.google.com.br/maps/place/Intend%C3%AAncia+Prefeitura+Santa+Luzia/@-28.7060364,-49.4340117,17z/data=!3m1!4b1!4m11!1m3!11m2!2soRh-Ak3pRa-u77IFqYwnlA!3e3!3m6!1s0x952183f4e4f0c0f5:0xb4e583366c3a9bb2!8m2!3d-28.7060412!4d-49.4291408!15sCgEqkgESdXRpbGl0eV9jb250cmFjdG9y4AEA!16s%2Fg%2F11g1lgydy7?entry=ttu" target="_blank"><button class="card-botao">Abrir no Google Maps <img src="images/google-maps.png" class="g-map" alt=""></button></a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="images/cards/rio-maina.png" alt="Intendência Rio Maina">
+                <div class="card-conteudo">
+                    <h1 class="card-titulo">Intendência Rio Maina</h1>
+                    <p class="card-texto">R. Miguel Nápoli, 547-595 - Vila Isabel, Criciúma - SC</p>
+                    <p class="card-texto">Horário: 08h às 17h de segunda a sexta</p>
+                    <a href="https://www.google.com.br/maps/place/Intendencia+Distrital+Subprefeitura+Rio+Maina/@-28.6752978,-49.426503,17z/data=!3m1!4b1!4m11!1m3!11m2!2soRh-Ak3pRa-u77IFqYwnlA!3e3!3m6!1s0x9521833eb27845ff:0xd40eb1380e9a00d3!8m2!3d-28.6753026!4d-49.4216321!15sCgEqkgEJY2l0eV9oYWxs4AEA!16s%2Fg%2F11c5bpypn1?entry=ttu" target="_blank"><button class="card-botao">Abrir no Google Maps <img src="images/google-maps.png" class="g-map" alt=""></button></a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="images/cards/imigrantes.jpg" alt="Parque dos Imigrantes">
+                <div class="card-conteudo">
+                    <h1 class="card-titulo">Parque dos Imigrantes</h1>
+                    <p class="card-texto">R. Jose Geronimo Mateus s/n Vila Francesa - Rio Maina, Criciúma - SC</p>
+                    <p class="card-texto">Horário: 08h às 17h de segunda a sexta</p>
+                    <a href="https://www.google.com.br/maps/place/Parque+dos+Imigrantes+-+Rio+Maina+Crici%C3%BAma/@-28.6848182,-49.3663259,14z/data=!4m11!1m3!11m2!2soRh-Ak3pRa-u77IFqYwnlA!3e3!3m6!1s0x9521838a6a132033:0x600ba30fb030c9d7!8m2!3d-28.6710832!4d-49.4172571!15sCgEqkgEEcGFya-ABAA!16s%2Fg%2F11flbxkw5k?entry=ttu" target="_blank"><button class="card-botao">Abrir no Google Maps <img src="images/google-maps.png" class="g-map" alt=""></button></a>
+                </div>
+            </div>
+            <!-- <div class="card">
+                <img class="card-img" src="images/cards/criciuma.jpg" alt="FAMCRI">
+                <div class="card-conteudo">
+                    <h1 class="card-titulo">Assoc. Moradores. Bairro Colonial </h1>
+                    <p class="card-texto">R. Virgílio Mondardo, 390 - Wosocris</p>
+                    <p class="card-texto">Horário: 08h às 17h de segunda a sábado</p>
+                    <a href="https://www.google.com.br/maps/place/R.+Virg%C3%ADlio+Mondardo,+390+-+Wosocris,+Crici%C3%BAma+-+SC,+88818-338/@-28.6659793,-49.4338006,17z/data=!3m1!4b1!4m10!1m3!11m2!2soRh-Ak3pRa-u77IFqYwnlA!3e3!3m5!1s0x9521834ba96c3995:0x62d816b0d12ed211!8m2!3d-28.6659841!4d-49.4289297!15sCgEq4AEA?entry=ttu" target="_blank"><button class="card-botao">Abrir no Google Maps <img src="images/google-maps.png" class="g-map" alt=""></button></a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="images/cards/criciuma.jpg" alt="Escola Fortunato">
+                <div class="card-conteudo">
+                    <h1 class="card-titulo">Escola Fortunato Brasil Naspolini</h1>
+                    <p class="card-texto">R. Itália, 70 - Mina do Toco, Criciúma - SC</p>
+                    <p class="card-texto">Horário: 07h às 17h de segunda a sexta</p>
+                    <a href="https://www.google.com.br/maps/place/Escola+Municipal+E.+Infantil+de+Ensino+Fundamental+Fortunato+Brasil+Naspolini/@-28.6389653,-49.3926701,17z/data=!3m1!4b1!4m11!1m3!11m2!2soRh-Ak3pRa-u77IFqYwnlA!3e3!3m6!1s0x95219d3806e1730f:0x78584c5e8689a174!8m2!3d-28.6389701!4d-49.3877992!15sCgEqkgEGc2Nob29s4AEA!16s%2Fg%2F1tg7t5jm?entry=ttu" target="_blank"><button class="card-botao">Abrir no Google Maps <img src="images/google-maps.png" class="g-map" alt=""></button></a>
+                </div>
+            </div> -->
+            <div class="card">
+                <img class="card-img" src="images/cards/altair.png" alt="Parque Altair Guidi">
+                <div class="card-conteudo">
+                    <h1 class="card-titulo">Parque Altair Guidi</h1>
+                    <p class="card-texto">Av. Centenário - Pinheirinho, Criciúma - SC</p>
+                    <p class="card-texto">Horário: 08h às 17h de segunda a sexta</p>
+                    <a href="https://www.google.com.br/maps/place/Parque+Municipal+Prefeito+Altair+Guidi+(Parque+Centen%C3%A1rio)/@-28.6909905,-49.3874521,17z/data=!3m1!4b1!4m11!1m3!11m2!2soRh-Ak3pRa-u77IFqYwnlA!3e3!3m6!1s0x9521826129e127bf:0xd60c5421c639db5a!8m2!3d-28.6909953!4d-49.3825812!15sCgEqkgEEcGFya-ABAA!16s%2Fg%2F11bzs476qc?entry=ttu" target="_blank"><button class="card-botao">Abrir no Google Maps <img src="images/google-maps.png" class="g-map" alt=""></button></a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="images/cards/posto-chile.jpg" alt="Posto Chile">
+                <div class="card-conteudo">
+                    <h1 class="card-titulo">Posto Chile</h1>
+                    <p class="card-texto">R. Miguel Patrício de Souza, 150 - Ceará, Criciúma - SC</p>
+                    <p class="card-texto">Horário: 24 horas de segunda a sábado</p>
+                    <a href="https://www.google.com.br/maps/place/Posto+Chile/@-28.6849358,-49.3509835,17z/data=!3m1!4b1!4m11!1m3!11m2!2soRh-Ak3pRa-u77IFqYwnlA!3e3!3m6!1s0x95217996b18242a3:0xc29dd5427b4ea196!8m2!3d-28.6849406!4d-49.3461126!15sCgEqkgELZ2FzX3N0YXRpb27gAQA!16s%2Fg%2F11h1yw00fl?entry=ttu" target="_blank"><button class="card-botao">Abrir no Google Maps <img src="images/google-maps.png" class="g-map" alt=""></button></a>
+                </div>
+            </div>                 
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
